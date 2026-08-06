@@ -6,3 +6,8 @@ export type navbarItem = {
   name: Record<Language, string>;
   href: string;
 }
+
+export interface IconProps {
+  size?: number;
+  className?: string;
+}

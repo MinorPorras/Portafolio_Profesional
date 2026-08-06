@@ -1,9 +1,82 @@
 .app-content {
   padding: 2rem;
   text-align: center;
+  display: flex;
 }
 
 h1 {
   color: var(--text-primary);
 }
-  
+
+/*   Hero   */
+.hero {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* Glow orb centrado en el fondo */
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 350px;
+  height: 350px;
+  background: var(--accent-primary);
+  opacity: 0.15;
+  filter: blur(120px);
+  border-radius: 50%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.hero-title {
+  font-size: var(--font-size-xxl);
+  grid-column: span 2;
+  margin: 0;
+}
+
+.hero-role {
+  font-size: var(--font-size-lg);
+  grid-column: span 2;
+}
+
+.hero-tagline {
+  text-align: center;
+}
+
+.hero-social-section {
+  display: flex;
+  gap: 1rem;
+  padding: 0.5rem;
+  align-items: center;
+}
+
+.social-link {
+  background-color: var(--bg-surface);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: fit-content;
+  border-radius: 4px;
+  width: 100%;
+  border: 1px solid var(--border-color);
+}
+
+.social-link:hover {
+  background-color: var(--accent-subtle);
+  transition: all 0.5s ease;
+}
+
+.social-icon {
+  width: 4rem;
+  fill: var(--icon-color);
+  transition: all 0.5s ease;
+}
+
+.social-link:hover .social-icon {
+  fill: var(--icon-hover);
+  transition: all 0.5s ease;
+}

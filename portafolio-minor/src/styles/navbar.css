@@ -42,11 +42,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 0.3s ease-in-out;
 }
 
 .navbar-item:hover {
   background-color: var(--accent-hover);
-  transition: all 0.3s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 a {
@@ -88,11 +89,12 @@ a {
     cursor: pointer;
     padding: 0.5rem;
     z-index: 102;
+    transition: all 0.3s ease-in-out;
   }
 
   .hamburger-btn:hover {
     background: var(--accent-subtle);
-    transition: all 0.3s ease-in-out;
+    transition: all 0.5s ease-in-out;
   }
 
   .hamburger-line {

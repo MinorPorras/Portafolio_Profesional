@@ -1,14 +1,15 @@
 import './styles/App.css'
 import './styles/navbar.css'
 import { MainNavbar } from './components/navbar';
+import Home from './components/home';
 
 function App() {
 
   return (
     <>
-      <MainNavbar></MainNavbar>
+      <MainNavbar/>
       <div className="app-content">
-        <h1>Portafolio Minor</h1>
+        <Home/>
       </div>
     </>
   );

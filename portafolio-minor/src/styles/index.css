@@ -1,52 +1,97 @@
-:root{
-    /* Paleta base */
-    --bg-primary: #f8fafc;
-    --bg-surface: #ffffff;
-    --text-primary: #0f172a;
-    --text-secondary: #475569;
+:root {
+  /* Paleta base */
+  --bg-primary: #f8fafc;
+  --bg-surface: #ffffff;
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
 
-    /* Acentuación: Menta / Esmeralda */
-    --accent-primary: #10b981;
-    --accent-hover: #059669;
-    --accent-subtle: rgba(16, 185, 129, 0.1);
+  /* Acentuación: Menta / Esmeralda */
+  --accent-primary: #10b981;
+  --accent-hover: #059669;
+  --accent-subtle: rgba(16, 185, 129, 0.1);
 
-    /* Bordes */
-    --border-color: #e2e8f0;
+  /* Iconos */
+  --icon-color: #475569;
+  --icon-hover: #10b981;
 
-    /* Tamaños de fuente */
-    --font-size-small: 0.8rem;
-    --font-size-medium: 1rem;
-    --font-size-large: 1.2rem;
-    --font-size-navbar-item: clamp(0.7rem, 1.3vw, 2rem);
-    --font-size-navbar-item-mobile: clamp(1rem, 2vw, 2rem);
+  /* Bordes */
+  --border-color: #e2e8f0;
+
+  /* Textos pequeños, badges, etiquetas y pies de nota */
+  --font-size-xs: clamp(0.75rem, 0.8vw, 0.875rem); /* ~12px a 14px */
+  --font-size-sm: clamp(0.875rem, 1vw, 1rem); /* ~14px a 16px */
+
+  /* Cuerpo de texto principal (Párrafos, descripciones) */
+  --font-size-base: clamp(1rem, 1.1vw, 1.125rem); /* ~16px a 18px */
+
+  /* Subtítulos de secciones o tarjetas h3 */
+  --font-size-md: clamp(1.125rem, 1.5vw, 1.35rem); /* ~18px a ~22px */
+
+  /* Títulos de secciones o componentes h2 */
+  --font-size-lg: clamp(1.5rem, 2.5vw, 2.25rem); /* ~24px a ~36px */
+
+  /* Títulos principales de impacto (Hero / Título H1) */
+  --font-size-xl: clamp(2rem, 4vw, 3.5rem); /* ~32px a ~56px */
+
+  /* Títulos gigantes de portada o efectos especiales (Display) */
+  --font-size-xxl: clamp(2.5rem, 6vw, 5rem); /* ~40px a ~80px */
+
+  /* Navegación (Conservando tus requerimientos responsivos) */
+  --font-size-navbar-item: clamp(0.85rem, 1.2vw, 1.1rem);
+  --font-size-navbar-item-mobile: clamp(1.1rem, 3vw, 1.5rem);
 }
 
 [data-theme="dark"] {
-    /* Paleta base */
-    --bg-primary: #0b0f19;
-    --bg-surface: #111827;
-    --text-primary: #f9fafb;
-    --text-secondary: #9ca3af;
+  /* Paleta base */
+  --bg-primary: #0b0f19;
+  --bg-surface: #111827;
+  --text-primary: #f9fafb;
+  --text-secondary: #9ca3af;
 
-    /* Acentuación: Menta / Esmeralda */
-    --accent-primary: #34d399;
-    --accent-hover: #10b981;
-    --accent-subtle: rgba(52, 211, 153, 0.15);
+  /* Acentuación: Menta / Esmeralda */
+  --accent-primary: #34d399;
+  --accent-hover: #10b981;
+  --accent-subtle: rgba(52, 211, 153, 0.15);
 
-    /* Bordes */
-    --border-color: #1f2937;
+  /* Iconos */
+  --icon-color: #9ca3af;
+  --icon-hover: #34d399;
+
+  /* Bordes */
+  --border-color: #1f2937;
 }
 
 html {
-    scroll-behavior: smooth;
-    width: 100vw;
-    height: 100vh;
+  scroll-behavior: smooth;
+  width: 100vw;
+  height: 100vh;
 }
 
-body{
-    background-color: var(--bg-primary);
-    color: var(--text-primary);
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    margin: 0;
-    transition: background-color 0.3s ease, color 0.3s ease;
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    sans-serif;
+  margin: 0;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+  /* Fondo base + Cuadrícula suave que se desvanece con un gradiente radial */
+  background-image:
+    radial-gradient(
+      circle at 50% 30%,
+      var(--accent-subtle) 0%,
+      transparent 60%
+    ),
+    linear-gradient(to right, var(--border-color) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--border-color) 1px, transparent 1px);
+  background-size:
+    100% 100%,
+    40px 40px,
+    40px 40px;
 }
