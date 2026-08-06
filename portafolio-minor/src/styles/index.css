@@ -5,11 +5,6 @@
   --text-primary: #0f172a;
   --text-secondary: #475569;
 
-  /* Acentuación: Menta / Esmeralda */
-  --accent-primary: #10b981;
-  --accent-hover: #059669;
-  --accent-subtle: rgba(16, 185, 129, 0.1);
-
   /* Iconos */
   --icon-color: #475569;
   --icon-hover: #10b981;
@@ -39,19 +34,49 @@
   /* Navegación (Conservando tus requerimientos responsivos) */
   --font-size-navbar-item: clamp(0.85rem, 1.2vw, 1.1rem);
   --font-size-navbar-item-mobile: clamp(1.1rem, 3vw, 1.5rem);
+
+  /* Acentuación: Menta / Esmeralda */
+  --accent-primary: #10b981;
+  --accent-hover: #059669;
+  --accent-subtle: rgba(16, 185, 129, 0.1);
+
+  /* --- Azul (React, TypeScript, Docker) --- */
+  --accent-blue: #2563eb;
+  --accent-blue-bg: rgba(37, 99, 235, 0.1);
+  --accent-blue-border: rgba(37, 99, 235, 0.2);
+
+  /* --- Morado / Púrpura (.NET, C#, Entity Framework) --- */
+  --accent-purple: #7c3aed;
+  --accent-purple-bg: rgba(124, 58, 237, 0.1);
+  --accent-purple-border: rgba(124, 58, 237, 0.2);
+
+  /* --- Rojo / Coral (Git, Oracle, Angular, Testing) --- */
+  --accent-red: #dc2626;
+  --accent-red-bg: rgba(220, 38, 38, 0.1);
+  --accent-red-border: rgba(220, 38, 38, 0.2);
+
+  /* --- Amarillo / Ámbar (JavaScript, SQL, Warning) --- */
+  --accent-yellow: #d97706;
+  --accent-yellow-bg: rgba(217, 119, 6, 0.1);
+  --accent-yellow-border: rgba(217, 119, 6, 0.2);
+
+  /* --- Naranja (HTML5, Linux, AWS) --- */
+  --accent-orange: #ea580c;
+  --accent-orange-bg: rgba(234, 88, 12, 0.1);
+  --accent-orange-border: rgba(234, 88, 12, 0.2);
+
+  /* --- Cían / Turquesa (CSS3, Tailwind, PostgreSQL) --- */
+  --accent-cyan: #0891b2;
+  --accent-cyan-bg: rgba(8, 145, 178, 0.1);
+  --accent-cyan-border: rgba(8, 145, 178, 0.2);
 }
 
 [data-theme="dark"] {
   /* Paleta base */
   --bg-primary: #0b0f19;
-  --bg-surface: #111827;
+  --bg-surface: #111827a8;
   --text-primary: #f9fafb;
   --text-secondary: #9ca3af;
-
-  /* Acentuación: Menta / Esmeralda */
-  --accent-primary: #34d399;
-  --accent-hover: #10b981;
-  --accent-subtle: rgba(52, 211, 153, 0.15);
 
   /* Iconos */
   --icon-color: #9ca3af;
@@ -59,15 +84,50 @@
 
   /* Bordes */
   --border-color: #1f2937;
+
+  /* Acentuación */
+  /* Menta / Esmeralda */
+  --accent-primary: #34d399;
+  --accent-hover: #10b981;
+  --accent-subtle: rgba(52, 211, 153, 0.15);
+
+  /* --- Azul --- */
+  --accent-blue: #60a5fa;
+  --accent-blue-bg: rgba(96, 165, 250, 0.15);
+  --accent-blue-border: rgba(96, 165, 250, 0.25);
+
+  /* --- Morado / Púrpura --- */
+  --accent-purple: #a78bfa;
+  --accent-purple-bg: rgba(167, 139, 250, 0.15);
+  --accent-purple-border: rgba(167, 139, 250, 0.25);
+
+  /* --- Rojo / Coral --- */
+  --accent-red: #f87171;
+  --accent-red-bg: rgba(248, 113, 113, 0.15);
+  --accent-red-border: rgba(248, 113, 113, 0.25);
+
+  /* --- Amarillo / Ámbar --- */
+  --accent-yellow: #fbbf24;
+  --accent-yellow-bg: rgba(251, 191, 36, 0.15);
+  --accent-yellow-border: rgba(251, 191, 36, 0.25);
+
+  /* --- Naranja --- */
+  --accent-orange: #fb923c;
+  --accent-orange-bg: rgba(251, 146, 60, 0.15);
+  --accent-orange-border: rgba(251, 146, 60, 0.25);
+
+  /* --- Cían / Turquesa --- */
+  --accent-cyan: #22d3ee;
+  --accent-cyan-bg: rgba(34, 211, 238, 0.15);
+  --accent-cyan-border: rgba(34, 211, 238, 0.25);
 }
 
 html {
   scroll-behavior: smooth;
-  width: 100vw;
-  height: 100vh;
 }
 
 body {
+  width: 100%;
   background-color: var(--bg-primary);
   color: var(--text-primary);
   font-family:
@@ -94,4 +154,18 @@ body {
     100% 100%,
     40px 40px,
     40px 40px;
+}
+
+.glassBackground{
+  background: rgba(--bg-surface);
+  backdrop-filter: blur(10px) saturate(180%);
+  -webkit-backdrop-filter: blur(10px) saturate(180%);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+}
+
+#root{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }

@@ -39,7 +39,7 @@ export function MainNavbar() {
         <span className={`hamburger-line ${isOpen ? "open" : ""}`}></span>
       </button>
       {isOpen && <div className="navbar-overlay" onClick={closeMenu} />}
-      <ul className={`navbar-list ${isOpen ? "is-open" : ""}`}>
+      <ul className={`navbar-list ${isOpen ? "is-open" : ""} glassBackground`}>
         {navBarItems.map((item) => (
           <li key={item.href} className="navbar-item">
             <a href={item.href}>{item.name[language]}</a>

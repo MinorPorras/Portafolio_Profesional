@@ -1,6 +1,4 @@
-import { GithubIcon } from "../components/icons/GithubIcon";
-import { LinkedinIcon } from "../components/icons/linkedinIcon";
-import type { HomeProps } from "../types/dataTypes";
+import type { HomeProps } from "../types/home";
 
 export const heroData: HomeProps = {
   greeting: {
@@ -19,13 +17,13 @@ export const heroData: HomeProps = {
     {
         platform: 'github',
         url: "https://github.com/MinorPorras",
-        Icon: GithubIcon,
+        iconName: "github",
         user: "MinorPorras"
     },
     {
         platform: 'linkedin',
         url: "https://www.linkedin.com/in/minor-porras-266372311/",
-        Icon: LinkedinIcon,
+        iconName: "linkedin",
         user: "Minor Porras Varela"
     }
   ],

@@ -1,5 +1,6 @@
+import type { AboutData } from "../types/about";
 
-export const aboutData = {
+export const aboutData: AboutData = {
   title: {
     es: "Sobre Mí",
     en: "About Me"
@@ -22,15 +23,15 @@ export const aboutData = {
   // Puntos clave para mostrar en formato de badges o tarjetas cortas al lado de la bio
   quickFacts: [
     {
-      label: { es: "Ubicación", en: "Location" },
-      value: "San José, Costa Rica"
+      iconName: "location",
+      value: { es: "San José, Costa Rica", en: "San José, Costa Rica"}
     },
     {
-      label: { es: "Educación", en: "Education" },
+      iconName: "education",
       value: { es: "Ingeniería en Informática (En curso)", en: "B.S. in Computer Science (In progress)" }
     },
     {
-      label: { es: "Inglés", en: "English" },
+      iconName: "languages",
       value: { es: "B2 (Intermedio Alto)", en: "B2 (Upper-Intermediate)" }
     }
   ]

@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from "react";
-import type {Theme}  from "../types/appTypes";
+import type {Theme}  from "../types/common";
 import { ThemeContext } from "../hooks/useTheme";
 
 

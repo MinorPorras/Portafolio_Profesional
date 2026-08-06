@@ -1,4 +1,4 @@
-import type { navbarItem } from "../types/appTypes";
+import type { navbarItem } from "../types/common";
 
 export const navbarItems: navbarItem[] = [
     {

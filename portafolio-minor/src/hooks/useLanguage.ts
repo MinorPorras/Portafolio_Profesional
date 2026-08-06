@@ -1,5 +1,5 @@
 import { createContext, useContext } from "react";
-import type { Language } from "../types/appTypes";
+import type { Language } from "../types/common";
 
 
 export interface LanguageContextProps {
