@@ -17,20 +17,30 @@ export function AboutMe() {
             className="aboutMe-avatar"
           />
         </div>
-        <div className="aboutMe-info">
-          <div className="aboutMe-paragraph">
-            {aboutData.paragraphs.map((text) => (
-              <p key={text.en.slice(0, 15)}>{text[language]}</p>
-            ))}
-          </div>
-          <div className="aboutMe-tag-section">
-            {aboutData.quickFacts.map(({ iconName, value }) => (
-              <div key={iconName} className="aboutMe-fact-tag">
-                <Icon name={iconName} className="social-icon" size={24} />
-                <p>{value[language]}</p>
-              </div>
-            ))}
-          </div>
+        <div className="aboutMe-bio">
+          {aboutData.paragraphs.map((text, index) => (
+            <p
+              key={index}
+              className={index === 0 ? "bio-lead" : "bio-paragraph"}
+            >
+              {text[language]}
+            </p>
+          ))}
+        </div>
+        <div className="aboutMe-tag-section">
+          {aboutData.quickFacts.map(({ iconName, value }) => (
+            <div
+              key={iconName}
+              className={`aboutMe-fact-tag aboutMe-fact-tag-${iconName}`}
+            >
+              <Icon
+                name={iconName}
+                className={`tagline-icon tagline-icon-${iconName}`}
+                size={20}
+              />
+              <p>{value[language]}</p>
+            </div>
+          ))}
         </div>
       </article>
     </section>

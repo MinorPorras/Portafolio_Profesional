@@ -6,9 +6,9 @@ export const Icon: React.FC<IconProps> = ({
   size = 24,
   className = "",
 }) => {
-  const path = iconPaths[name];
+  const iconDefinition = iconPaths[name];
 
-  if (!path) {
+  if (!iconDefinition) {
     console.warn(`Icon ${name} not found un iconPaths map.`);
     return null;
   }
@@ -19,10 +19,10 @@ export const Icon: React.FC<IconProps> = ({
       fill="currentColor"
       width={size}
       height={size}
-      viewBox="0 0 24 24" // Asegúrate de que coincida con el viewBox estándar de tus SVGs
+      viewBox={iconDefinition.viewBox}
       className={`icon icon-${name} ${className}`}
     >
-      {path}
+      {iconDefinition.path}
     </svg>
   );
 };

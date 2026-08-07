@@ -24,7 +24,7 @@ export const aboutData: AboutData = {
   quickFacts: [
     {
       iconName: "location",
-      value: { es: "San José, Costa Rica", en: "San José, Costa Rica"}
+      value: { es: "Escazú, San José, Costa Rica", en: "Escazú, San José, Costa Rica"}
     },
     {
       iconName: "education",
@@ -32,7 +32,7 @@ export const aboutData: AboutData = {
     },
     {
       iconName: "languages",
-      value: { es: "B2 (Intermedio Alto)", en: "B2 (Upper-Intermediate)" }
+      value: { es: "Inglés B2 (Intermedio Alto)", en: "English B2 (Upper-Intermediate)" }
     }
   ]
 };

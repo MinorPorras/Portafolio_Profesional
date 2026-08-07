@@ -25,8 +25,11 @@ export interface IconProps {
   className?: string;
 }
 
+export interface IconDefinition {
+  viewBox: string;
+  path: React.ReactNode;
+}
 
-export type Icon = React.FC<{ size?: number; className?: string }>;
 
 export interface SocialMediaLink {
   platform: SocialPlatform;

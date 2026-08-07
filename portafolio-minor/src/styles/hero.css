@@ -26,6 +26,7 @@
   font-size: var(--font-size-xxl);
   grid-column: span 2;
   margin: 0;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.6);
 }
 
 .hero-role {
@@ -56,21 +57,27 @@
   width: fit-content;
   border: 1px solid var(--border-color);
   padding: 0.5rem 1rem;
+  gap: 10px;
 }
 
 .social-link:hover {
   background-color: var(--accent-subtle);
+  transform: scale(105%);
   transition: all 0.5s ease;
 }
 
 .social-icon {
-  width: 4rem;
   fill: var(--icon-color);
   transition: all 0.5s ease;
 }
 
-.social-link:hover .social-icon {
-  fill: var(--icon-hover);
+.social-link:hover .social-icon-github {
+  fill: var(--accent-orange);
+  transition: all 0.5s ease;
+}
+
+.social-link:hover .social-icon-linkedin {
+  fill: var(--accent-blue);
   transition: all 0.5s ease;
 }
 

@@ -20,7 +20,7 @@ export function Home() {
                     rel="noopener noreferrer"
                     className='social-link'
                 >
-                    <Icon name={iconName} className="social-icon" size={24}/>
+                    <Icon name={iconName} className={`social-icon social-icon-${iconName}`} size={24}/>
                     {user}
                 </a>
                 ))}
