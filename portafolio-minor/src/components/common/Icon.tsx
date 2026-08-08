@@ -1,5 +1,5 @@
-import type { IconProps } from "../types";
-import { iconPaths } from "./common/iconPaths";
+import type { IconProps } from "../../types";
+import { iconPaths } from "./iconPaths";
 
 export const Icon: React.FC<IconProps> = ({
   name,

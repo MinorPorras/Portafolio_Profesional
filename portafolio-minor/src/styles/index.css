@@ -69,6 +69,8 @@
   --accent-cyan: #0891b2;
   --accent-cyan-bg: rgba(8, 145, 178, 0.1);
   --accent-cyan-border: rgba(8, 145, 178, 0.2);
+
+  --glow-color: rgba(16, 185, 129, 0.22);
 }
 
 [data-theme="dark"] {
@@ -120,6 +122,8 @@
   --accent-cyan: #22d3ee;
   --accent-cyan-bg: rgba(34, 211, 238, 0.15);
   --accent-cyan-border: rgba(34, 211, 238, 0.25);
+
+  --glow-color: rgba(52, 211, 153, 0.14);
 }
 
 html {

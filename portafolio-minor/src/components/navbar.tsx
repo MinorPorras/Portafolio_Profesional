@@ -42,7 +42,7 @@ export function MainNavbar() {
       <ul className={`navbar-list ${isOpen ? "is-open" : ""} glassBackground`}>
         {navBarItems.map((item) => (
           <li key={item.href} className="navbar-item">
-            <a href={item.href}>{item.name[language]}</a>
+            <a href={item.href} onClick={closeMenu}>{item.name[language]}</a>
           </li>
         ))}
         <li className="navbar-button-item">

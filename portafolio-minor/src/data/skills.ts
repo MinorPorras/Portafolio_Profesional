@@ -1,23 +1,23 @@
-import type { Skill } from '../types/dataTypes.ts';
+import type { skillData } from '../types/skills.ts';
 
-export const Skills: Skill[] = [
+export const Skills: skillData[] = [
   // Frameworks y Librerías (category: "frontend" o "backend")
   { name: { es: "ASP.NET", en: "ASP.NET" }, category: "backend", iconName: "aspnet" },
   { name: { es: ".NET Core", en: ".NET Core" }, category: "backend", iconName: "dotnet" },
   { name: { es: "Entity Framework Core", en: "Entity Framework Core" }, category: "backend", iconName: "efcore" },
-  { name: { es: "WinForms", en: "WinForms" }, category: "frontend", iconName: "windows" },
+  { name: { es: "WinForms", en: "WinForms" }, category: "frontend", iconName: "winform" },
   { name: { es: "React", en: "React" }, category: "frontend", iconName: "react" },
   { name: { es: "Bootstrap", en: "Bootstrap" }, category: "frontend", iconName: "bootstrap" },
   { name: { es: "Syncfusion", en: "Syncfusion" }, category: "frontend", iconName: "syncfusion" },
   { name: { es: "GUNA2", en: "GUNA2" }, category: "frontend", iconName: "guna" },
   { name: { es: "GSAP", en: "GSAP" }, category: "frontend", iconName: "gsap" },
+  { name: {es: "Velopack", en: "Velopack"}, category: "backend", iconName: "velopack"},
 
   // Lenguajes
   { name: { es: "C#", en: "C#" }, category: "backend", iconName: "csharp" },
-  { name: { es: "VB.NET", en: "VB.NET" }, category: "backend", iconName: "dotnet" },
+  { name: { es: "VB.NET", en: "VB.NET" }, category: "backend", iconName: "vbnet" },
   { name: { es: "TypeScript", en: "TypeScript" }, category: "backend", iconName: "typescript" },
   { name: { es: "JavaScript", en: "JavaScript" }, category: "frontend", iconName: "javascript" },
-  { name: { es: "SQL", en: "SQL" }, category: "database", iconName: "sql" },
 
   // Bases de datos
   { name: { es: "SQL Server", en: "SQL Server" }, category: "database", iconName: "sqlserver" },
@@ -39,9 +39,9 @@ export const Skills: Skill[] = [
   { name: { es: "Linux", en: "Linux" }, category: "tools", iconName: "linux" },
 
   // Soft Skills (category: "soft-skills")
-  { name: { es: "Comunicación asertiva", en: "Assertive communication" }, category: "soft-skills" },
-  { name: { es: "Trabajo en equipo", en: "Teamwork" }, category: "soft-skills" },
-  { name: { es: "Resolución de problemas", en: "Problem solving" }, category: "soft-skills" },
-  { name: { es: "Adaptabilidad a nuevos entornos", en: "Adaptability" }, category: "soft-skills" },
-  { name: { es: "Gestión del tiempo", en: "Time management" }, category: "soft-skills" }
+  { name: { es: "Comunicación asertiva", en: "Assertive communication" }, category: "soft-skills", iconName: "assertivecom" },
+  { name: { es: "Trabajo en equipo", en: "Teamwork" }, category: "soft-skills", iconName: "teamwork" },
+  { name: { es: "Resolución de problemas", en: "Problem solving" }, category: "soft-skills", iconName: "problemsolving" },
+  { name: { es: "Adaptabilidad a nuevos entornos", en: "Adaptability" }, category: "soft-skills", iconName: "adaptability" },
+  { name: { es: "Gestión del tiempo", en: "Time management" }, category: "soft-skills", iconName: "timemanage" }
 ];

@@ -1,12 +1,5 @@
 import type { LocalizedString } from "./common";
 
-export type ProjectCategory = 
-  | "fullstack" 
-  | "backend" 
-  | "frontend" 
-  | "desktop" 
-  | "tooling" 
-  | "other";
 
 export type ProjectStateEs = "completado" | "en-progreso" | "planeado";
 export type ProjectStateEn = "completed" | "in-progress" | "planned";
@@ -27,3 +20,11 @@ export interface Project {
   category: ProjectCategory;
   state: ProjectState;
 }
+
+export type ProjectCategory = 
+  | "fullstack" 
+  | "backend" 
+  | "frontend" 
+  | "desktop" 
+  | "tooling" 
+  | "other";

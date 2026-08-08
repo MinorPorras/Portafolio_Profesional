@@ -11,9 +11,37 @@ h1 {
   color: var(--text-primary);
 }
 
- a {
+a {
   text-decoration: none;
   font-size: var(--font-size-navbar-item);
   color: var(--text-primary);
   text-align: center;
+}
+
+section[id],
+[id] {
+  scroll-margin-top: 4.5rem;
+}
+
+.glow-follower {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 0;
+  background: radial-gradient(
+    550px circle at var(--mouse-x, 50vw) var(--mouse-y, 50vh),
+    var(--glow-color),
+    transparent 80%
+  );
+  transition: background-color 0.3s ease;
+}
+
+/* Desactivar en pantallas táctiles */
+@media (hover: none) {
+  .glow-follower {
+    display: none;
+  }
 }

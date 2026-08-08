@@ -34,4 +34,140 @@ export const iconPaths: Record<IconName, IconDefinition> = {
       <path d="M12.5 12.255a.32.32 0 0 0 .313-.387l-.202-.957a.61.61 0 0 0-.02-.895V6.694l-.81.501v2.82a.61.61 0 0 0-.02.896l-.201.957a.32.32 0 0 0 .314.387zm.274-7.5L7.502 1.492a.96.96 0 0 0-1.004 0L1.226 4.755a.478.478 0 0 0 0 .814l5.272 3.263a.95.95 0 0 0 1.004 0l5.272-3.263a.478.478 0 0 0 0-.814M7 9.785a1.76 1.76 0 0 1-.929-.264L2.996 7.617v3.278c0 .97 1.794 1.756 4.004 1.756s4.003-.786 4.003-1.756V7.617L7.93 9.521c-.28.173-.601.264-.93.264" />
     ),
   },
+  aspnet: {
+    viewBox: "",
+    path: <path d="" />,
+  },
+  dotnet: {
+    viewBox: "",
+    path: <path d="" />,
+  },
+  efcore: {
+    viewBox: "",
+    path: <path d="" />,
+  },
+  winform: {
+    viewBox: "",
+    path: <path d="" />,
+  },
+  react: {
+    viewBox: "",
+    path: <path d="" />,
+  },
+  bootstrap: {
+    viewBox: "",
+    path: <path d="" />,
+  },
+  syncfusion: {
+    viewBox: "",
+    path: <path d="" />,
+  },
+  guna: {
+    viewBox: "",
+    path: <path d="" />,
+  },
+  gsap: {
+    viewBox: "",
+    path: <path d="" />,
+  },
+  velopack: {
+    viewBox: "",
+    path: <path d="" />,
+  },
+  csharp: {
+    viewBox: "",
+    path: <path d="" />,
+  },
+  vbnet: {
+    viewBox: "",
+    path: <path d="" />,
+  },
+  typescript: {
+    viewBox: "",
+    path: <path d="" />,
+  },
+  javascript: {
+    viewBox: "",
+    path: <path d="" />,
+  },
+  sql: {
+    viewBox: "",
+    path: <path d="" />,
+  },
+  sqlserver: {
+    viewBox: "",
+    path: <path d="" />,
+  },
+  oracle: {
+    viewBox: "",
+    path: <path d="" />,
+  },
+  postgresql: {
+    viewBox: "",
+    path: <path d="" />,
+  },
+  sqlite: {
+    viewBox: "",
+    path: <path d="" />,
+  },
+  git: {
+    viewBox: "",
+    path: <path d="" />,
+  },
+  visualstudio: {
+    viewBox: "",
+    path: <path d="" />,
+  },
+  vscode: {
+    viewBox: "",
+    path: <path d="" />,
+  },
+  rider: {
+    viewBox: "",
+    path: <path d="" />,
+  },
+  ssms: {
+    viewBox: "",
+    path: <path d="" />,
+  },
+  dbeaver: {
+    viewBox: "",
+    path: <path d="" />,
+  },
+  nuget: {
+    viewBox: "",
+    path: <path d="" />,
+  },
+  npm: {
+    viewBox: "",
+    path: <path d="" />,
+  },
+  pnpm: {
+    viewBox: "",
+    path: <path d="" />,
+  },
+  linux: {
+    viewBox: "",
+    path: <path d="" />,
+  },
+  assertivecom: {
+    viewBox: "",
+    path: <path d="" />,
+  },
+  teamwork: {
+    viewBox: "",
+    path: <path d="" />,
+  },
+  problemsolving: {
+    viewBox: "",
+    path: <path d="" />,
+  },
+  adaptability: {
+    viewBox: "",
+    path: <path d="" />,
+  },
+  timemanage: {
+    viewBox: "",
+    path: <path d="" />,
+  },
 };

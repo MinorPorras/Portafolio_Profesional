@@ -1,6 +1,6 @@
 import { useLanguage } from "../hooks/useLanguage";
 import { aboutData } from "../data/aboutMe";
-import { Icon } from "./Icon";
+import { Icon } from "./common/Icon";
 import profilePlaceholder from "../assets/profile-placeholder.png";
 
 export function AboutMe() {

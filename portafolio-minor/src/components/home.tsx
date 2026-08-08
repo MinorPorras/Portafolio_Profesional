@@ -1,6 +1,6 @@
 import { useLanguage } from '../hooks/useLanguage';
 import { heroData } from '../data/home'; 
-import { Icon } from './Icon';
+import { Icon } from './common/Icon';
 
 export function Home() {
     const { language } = useLanguage();

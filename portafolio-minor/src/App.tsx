@@ -1,22 +1,27 @@
-import './styles/App.css'
-import './styles/navbar.css'
-import './styles/hero.css'
-import './styles/aboutMe.css'
-import { MainNavbar } from './components/navbar';
-import Home from './components/home';
-import { AboutMe } from './components/aboutMe';
+import "./styles/App.css";
+import "./styles/navbar.css";
+import "./styles/hero.css";
+import "./styles/aboutMe.css";
+import "./styles/experience.css";
+
+import { MainNavbar } from "./components/navbar";
+import Home from "./components/home";
+import { AboutMe } from "./components/aboutMe";
+import { Experience } from "./components/experience";
+import { GlowMouseFolower } from "./components/common/GlowMouseFollower";
 
 function App() {
-
   return (
     <>
-      <MainNavbar/>
+      <GlowMouseFolower />
+      <MainNavbar />
       <div className="app-content">
-        <Home/>
-        <AboutMe/>
+        <Home />
+        <AboutMe />
+        <Experience />
       </div>
     </>
   );
 }
 
-export default App
+export default App;
