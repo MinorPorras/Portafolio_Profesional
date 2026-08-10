@@ -34,19 +34,23 @@ export const experienceData: experience = {
       techPills: [
         {
           value: "VB.NET",
-          className: "simple-techPill-vbnet",
+          iconName: "vbnet",
+          iconClassName: "icon-purple",
         },
         {
           value: "Visual Studio",
-          className: "simple-techPill-visualstudio",
+          iconName: "visualstudio",
+          iconClassName: "icon-purple",
         },
         {
           value: "NuGet",
-          className: "simple-techPill-nuget",
+          iconName: "nuget",
+          iconClassName: "icon-blue",
         },
         {
           value: "WinForms",
-          className: "simple-techPill-winform",
+          iconName: "winform",
+          iconClassName: "icon-blue",
         },
       ],
     },
@@ -82,39 +86,48 @@ export const experienceData: experience = {
       techPills: [
         {
           value: "VB.NET",
-          className: "simple-techPill-vbnet",
+          iconName: "vbnet",
+          iconClassName: "icon-purple",
         },
         {
           value: "C#",
-          className: "simple-techPill-csharp",
+          iconName: "csharp",
+          iconClassName: "icon-purple",
         },
         {
           value: "Visual Studio",
-          className: "simple-techPill-visualstudio",
+          iconName: "visualstudio",
+          iconClassName: "icon-purple",
         },
         {
           value: "NuGet",
-          className: "simple-techPill-nuget",
+          iconName: "nuget",
+          iconClassName: "icon-blue",
         },
         {
           value: "WinForms",
-          className: "simple-techPill-winform",
+          iconName: "winform",
+          iconClassName: "icon-blue",
         },
         {
           value: "Velopack",
-          className: "simple-techPill-velopack",
+          iconName: "velopack",
+          iconClassName: "icon-yellow",
         },
         {
           value: "GUNA2",
-          className: "simple-techPill-guna",
+          iconName: "guna",
+          iconClassName: "icon-purple",
         },
         {
           value: "Syncfusion",
-          className: "simple-techPill-syncfusion",
+          iconName: "syncfusion",
+          iconClassName: "icon-blue",
         },
         {
           value: "SQLite",
-          className: "simple-techPill-sqlite",
+          iconName: "sqlite",
+          iconClassName: "icon-cyan",
         },
       ],
     },

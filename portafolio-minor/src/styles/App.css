@@ -7,8 +7,10 @@
   justify-content: center;
 }
 
-h1 {
-  color: var(--text-primary);
+.section-title {
+  font-size: var(--font-size-xxl);
+  margin: 0;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.6);
 }
 
 a {
@@ -44,4 +46,49 @@ section[id],
   .glow-follower {
     display: none;
   }
+}
+
+/* Contenedor o badge de la tecnología */
+.tech-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.25rem 0.6rem;
+  border-radius: 16px;
+  text-align: center;
+  font-family: monospace;
+  font-size: var(--font-size-sm);
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  color: var(--text-secondary);
+  transition: all 0.3s ease;
+}
+
+/* Ícono en estado reposo (neutro) */
+.tech-pill-icon {
+  fill: var(--icon-color);
+  transition: fill 0.3s ease;
+}
+
+/* Estado hover: enciende el ícono según su clase de color */
+.tech-pill:hover .icon-primary {
+  fill: var(--accent-primary);
+}
+.tech-pill:hover .icon-blue {
+  fill: var(--accent-blue);
+}
+.tech-pill:hover .icon-purple {
+  fill: var(--accent-purple);
+}
+.tech-pill:hover .icon-red {
+  fill: var(--accent-red);
+}
+.tech-pill:hover .icon-yellow {
+  fill: var(--accent-yellow);
+}
+.tech-pill:hover .icon-orange {
+  fill: var(--accent-orange);
+}
+.tech-pill:hover .icon-cyan {
+  fill: var(--accent-cyan);
 }

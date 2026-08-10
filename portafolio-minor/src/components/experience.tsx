@@ -1,12 +1,13 @@
 import { useLanguage } from "../hooks/useLanguage";
 import { experienceData } from "../data/workExperiences";
+import { Icon } from "./common/Icon";
 
 export function Experience() {
   const { language } = useLanguage();
 
   return (
     <section id="experience" className="experience-section">
-      <h2 className="experience-title">{experienceData.title[language]}</h2>
+      <h2 className="section-title experience-title">{experienceData.title[language]}</h2>
       <div className="timeline-container">
         {experienceData.items.map(
           ({ id, role, company, period, description, techPills }) => (
@@ -25,13 +26,20 @@ export function Experience() {
                 <div className="timeline-body">
                   <ul className="timeline-description">
                     {description.map((text) => (
-                      <li key={text[language].slice(0, 15)}>{text[language]}</li>
+                      <li key={text[language].slice(0, 15)}>
+                        {text[language]}
+                      </li>
                     ))}
                   </ul>
 
                   <div className="timeline-techpills-container">
-                    {techPills.map(({ value, className }) => (
-                      <span key={value} className={`simple-techPill ${className}`}>
+                    {techPills.map(({value, iconName, iconClassName}) => (
+                      <span key={value} className={`tech-pill`}>
+                        <Icon
+                          name={iconName}
+                          className={iconClassName}
+                          size={24}
+                        />
                         {value}
                       </span>
                     ))}

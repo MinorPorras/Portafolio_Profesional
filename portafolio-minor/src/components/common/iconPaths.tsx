@@ -35,139 +35,179 @@ export const iconPaths: Record<IconName, IconDefinition> = {
     ),
   },
   aspnet: {
-    viewBox: "",
+    viewBox: "0 0 24 24",
     path: <path d="" />,
   },
   dotnet: {
-    viewBox: "",
+    viewBox: "0 0 24 24",
     path: <path d="" />,
   },
   efcore: {
-    viewBox: "",
+    viewBox: "0 0 24 24",
     path: <path d="" />,
   },
   winform: {
-    viewBox: "",
+    viewBox: "0 0 24 24",
     path: <path d="" />,
   },
   react: {
-    viewBox: "",
+    viewBox: "0 0 24 24",
     path: <path d="" />,
   },
   bootstrap: {
-    viewBox: "",
+    viewBox: "0 0 24 24",
     path: <path d="" />,
   },
   syncfusion: {
-    viewBox: "",
+    viewBox: "0 0 24 24",
     path: <path d="" />,
   },
   guna: {
-    viewBox: "",
+    viewBox: "0 0 24 24",
     path: <path d="" />,
   },
   gsap: {
-    viewBox: "",
+    viewBox: "0 0 24 24",
     path: <path d="" />,
   },
   velopack: {
-    viewBox: "",
+    viewBox: "0 0 24 24",
     path: <path d="" />,
   },
   csharp: {
-    viewBox: "",
+    viewBox: "0 0 24 24",
     path: <path d="" />,
   },
   vbnet: {
-    viewBox: "",
+    viewBox: "0 0 24 24",
     path: <path d="" />,
   },
   typescript: {
-    viewBox: "",
+    viewBox: "0 0 24 24",
     path: <path d="" />,
   },
   javascript: {
-    viewBox: "",
+    viewBox: "0 0 24 24",
     path: <path d="" />,
   },
   sql: {
-    viewBox: "",
+    viewBox: "0 0 24 24",
     path: <path d="" />,
   },
   sqlserver: {
-    viewBox: "",
+    viewBox: "0 0 24 24",
     path: <path d="" />,
   },
   oracle: {
-    viewBox: "",
+    viewBox: "0 0 24 24",
     path: <path d="" />,
   },
   postgresql: {
-    viewBox: "",
+    viewBox: "0 0 24 24",
     path: <path d="" />,
   },
   sqlite: {
-    viewBox: "",
+    viewBox: "0 0 24 24",
     path: <path d="" />,
   },
   git: {
-    viewBox: "",
+    viewBox: "0 0 24 24",
     path: <path d="" />,
   },
   visualstudio: {
-    viewBox: "",
+    viewBox: "0 0 24 24",
     path: <path d="" />,
   },
   vscode: {
-    viewBox: "",
+    viewBox: "0 0 24 24",
     path: <path d="" />,
   },
   rider: {
-    viewBox: "",
+    viewBox: "0 0 24 24",
     path: <path d="" />,
   },
   ssms: {
-    viewBox: "",
+    viewBox: "0 0 24 24",
     path: <path d="" />,
   },
   dbeaver: {
-    viewBox: "",
+    viewBox: "0 0 24 24",
     path: <path d="" />,
   },
   nuget: {
-    viewBox: "",
+    viewBox: "0 0 24 24",
     path: <path d="" />,
   },
   npm: {
-    viewBox: "",
+    viewBox: "0 0 24 24",
     path: <path d="" />,
   },
   pnpm: {
-    viewBox: "",
+    viewBox: "0 0 24 24",
     path: <path d="" />,
   },
   linux: {
-    viewBox: "",
+    viewBox: "0 0 24 24",
     path: <path d="" />,
   },
   assertivecom: {
-    viewBox: "",
+    viewBox: "0 0 24 24",
     path: <path d="" />,
   },
   teamwork: {
-    viewBox: "",
+    viewBox: "0 0 24 24",
     path: <path d="" />,
   },
   problemsolving: {
-    viewBox: "",
+    viewBox: "0 0 24 24",
     path: <path d="" />,
   },
   adaptability: {
-    viewBox: "",
+    viewBox: "0 0 24 24",
     path: <path d="" />,
   },
   timemanage: {
-    viewBox: "",
+    viewBox: "0 0 24 24",
+    path: <path d="" />,
+  },
+  demo: {
+    viewBox: "0 0 24 24",
+    path: <path d="" />,
+  },
+  html5: {
+    viewBox: "0 0 24 24",
+    path: <path d="" />,
+  },
+  css3: {
+    viewBox: "0 0 24 24",
+    path: <path d="" />,
+  },
+  vite: {
+    viewBox: "0 0 24 24",
+    path: <path d="" />,
+  },
+  jquery: {
+    viewBox: "0 0 24 24",
+    path: <path d="" />,
+  },
+  netframework: {
+    viewBox: "0 0 24 24",
+    path: <path d="" />,
+  },
+  access: {
+    viewBox: "0 0 24 24",
+    path: <path d="" />,
+  },
+  oledb: {
+    viewBox: "0 0 24 24",
+    path: <path d="" />,
+  },
+  officeinterop: {
+    viewBox: "0 0 24 24",
+    path: <path d="" />,
+  },
+  avalonia: {
+    viewBox: "0 0 24 24",
     path: <path d="" />,
   },
 };

@@ -12,11 +12,11 @@ export type SocialPlatform =
   | "tiktok"
   | "other";
 
-export type IconName = 
-  | "github" 
-  | "linkedin"  
-  | "languages" 
-  | "location" 
+export type IconName =
+  | "github"
+  | "linkedin"
+  | "languages"
+  | "location"
   | "education"
   | "aspnet"
   | "dotnet"
@@ -39,7 +39,7 @@ export type IconName =
   | "sqlite"
   | "git"
   | "visualstudio"
-  |"vscode"
+  | "vscode"
   | "rider"
   | "ssms"
   | "dbeaver"
@@ -51,7 +51,17 @@ export type IconName =
   | "teamwork"
   | "problemsolving"
   | "adaptability"
-  | "timemanage";
+  | "timemanage"
+  | "demo"
+  | "html5"
+  | "css3"
+  | "vite"
+  | "jquery"
+  | "netframework"
+  | "access"
+  | "oledb"
+  | "officeinterop"
+  | "avalonia";
 
 export interface IconProps {
   name: IconName;
@@ -63,7 +73,6 @@ export interface IconDefinition {
   viewBox: string;
   path: React.ReactNode;
 }
-
 
 export interface SocialMediaLink {
   platform: SocialPlatform;
@@ -79,36 +88,58 @@ export type navbarItem = {
   href: string;
 };
 
-export type usedTech = "ASP.NET"
-| ".NET Core"
-| "EF Core"
-| "WinForms"
-| "React"
-| "Bootstrap"
-| "Syncfusion"
-| "GUNA2"
-| "GSAP"
-| "Velopack"
-| "C#"
-| "VB.NET"
-| "TypeScript"
-| "JavaScript"
-| "SQL Server"
-| "Oracle DB"
-| "PostgreSQL"
-| "SQLite"
-| "GitHub"
-| "Visual Studio"
-| "VS Code"
-| "Jetbrains Rider"
-| "SSMS"
-| "DBeaver"
-| "NuGet"
-| "npm"
-| "pnpm"
-| "linux"
+export type usedTech =
+  | "ASP.NET"
+  | ".NET Core"
+  | "EF Core"
+  | "WinForms"
+  | "React"
+  | "Bootstrap"
+  | "Syncfusion"
+  | "GUNA2"
+  | "GSAP"
+  | "Velopack"
+  | "C#"
+  | "VB.NET"
+  | "TypeScript"
+  | "JavaScript"
+  | "SQL Server"
+  | "Oracle DB"
+  | "PostgreSQL"
+  | "SQLite"
+  | "GitHub"
+  | "Visual Studio"
+  | "VS Code"
+  | "Jetbrains Rider"
+  | "SSMS"
+  | "DBeaver"
+  | "NuGet"
+  | "npm"
+  | "pnpm"
+  | "linux"
+  | "HTML5"
+  | "CSS3"
+  | "Vite"
+  | "jQuery"
+  | ".NET Framework"
+  | "Microsoft Access"
+  | "OLEDB / ODBC"
+  | "MS Office Interop"
+  | "Avalonia";
 
 export interface techPillsData {
   value: usedTech;
-  className: string;
+  iconName: IconName;
+  iconClassName: string;
+}
+
+export interface FilterOptions<T extends string> {
+  id: T | "all";
+  label: string;
+}
+
+export interface CategoryFilterProps<T extends string> {
+  options: FilterOptions<T>[];
+  isCategorySelected: (category: T | "all") => boolean;
+  onToggleCategory: (category: T | "all") => void;
 }

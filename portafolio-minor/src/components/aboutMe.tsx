@@ -8,7 +8,7 @@ export function AboutMe() {
 
   return (
     <section className="aboutMe-section" id="aboutMe">
-      <h2 className="aboutMe-title">{aboutData.title[language]}</h2>
+      <h2 className="section-title aboutMe-title">{aboutData.title[language]}</h2>
       <article className="aboutMe-Content">
         <div className="aboutMe-avatar-container">
           <img

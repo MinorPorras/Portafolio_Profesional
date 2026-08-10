@@ -1,4 +1,4 @@
-import type { LocalizedString } from "./common";
+import type { LocalizedString, techPillsData } from "./common";
 
 
 export type ProjectStateEs = "completado" | "en-progreso" | "planeado";
@@ -13,18 +13,24 @@ export interface Project {
   id: string;
   title: LocalizedString;
   description: LocalizedString;
-  techStack: string[];
+  imageLocation?: string;
+  techStack: techPillsData[];
   githubUrl?: string;
   liveDemoUrl?: string;
   featured: boolean;
-  category: ProjectCategory;
+  categories: ProjectCategory[];
   state: ProjectState;
 }
 
-export type ProjectCategory = 
-  | "fullstack" 
-  | "backend" 
-  | "frontend" 
-  | "desktop" 
-  | "tooling" 
+export type ProjectCategory =
+  | "fullstack"
+  | "backend"
+  | "frontend"
+  | "desktop"
+  | "web"
+  | "tooling"
   | "other";
+
+export interface ProjectsCardProps {
+  project: Project;
+}

@@ -8,7 +8,7 @@ export function Home() {
 
     return (
         <section className="hero-section" id="home">
-            <h1 className='hero-title'>{heroData.greeting[language]}</h1>
+            <h1 className='hero-title section-title'>{heroData.greeting[language]}</h1>
             <h2 className='hero-role'>{heroData.role[language]}</h2>
             <p className='hero-tagline'>{heroData.tagline[language]}</p>
             <div className='hero-social-section'>
