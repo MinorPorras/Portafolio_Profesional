@@ -6,7 +6,6 @@
   margin-bottom: 3rem;
   align-items: start;
   justify-content: center;
-  width: 100%;
   max-width: 1200px;
   box-sizing: border-box;
   background-color: var(--bg-surface);
@@ -101,4 +100,26 @@
 .contact-submit-btn:hover {
   opacity: 0.9;
   transform: translateY(-2px);
+}
+
+@media (max-width: 850px) {
+    .contact-section{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+    }
+    .contact-header{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .contact-subtitle{
+        grid-column: 1/-1;
+    }
+
+    .contact-section-icon{
+        grid-column-end: -1;
+        grid-row: 1;
+    }
 }
