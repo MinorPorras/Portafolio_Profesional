@@ -210,4 +210,8 @@ export const iconPaths: Record<IconName, IconDefinition> = {
     viewBox: "0 0 24 24",
     path: <path d="" />,
   },
+  phone: {
+    viewBox: "0 0 24 24",
+    path: <path d="" />,
+  },
 };

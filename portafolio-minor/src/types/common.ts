@@ -61,7 +61,8 @@ export type IconName =
   | "access"
   | "oledb"
   | "officeinterop"
-  | "avalonia";
+  | "avalonia"
+  | "phone";
 
 export interface IconProps {
   name: IconName;
@@ -142,4 +143,21 @@ export interface CategoryFilterProps<T extends string> {
   options: FilterOptions<T>[];
   isCategorySelected: (category: T | "all") => boolean;
   onToggleCategory: (category: T | "all") => void;
+}
+
+export interface FormData {
+  name: string;
+  email: string;
+  subject: string;
+  message: string;
+  honeypot: string;
+}
+
+export interface ContactRequestBody {
+  name?: string;
+  email?: string;
+  subject?: string;
+  message?: string;
+  honeypot?: string;
+  startTime?: number;
 }
