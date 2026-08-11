@@ -79,6 +79,7 @@ export interface SocialMediaLink {
   platform: SocialPlatform;
   url: string;
   iconName: IconName;
+  iconColorClass: string
   user: string;
 }
 
