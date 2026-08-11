@@ -19,7 +19,7 @@ import { Contact } from "./components/contact";
 function App() {
   return (
     <>
-      {/* <GlowMouseFolower /> */}
+      <GlowMouseFolower />
       <MainNavbar />
       <div className="app-content">
         <Home />
