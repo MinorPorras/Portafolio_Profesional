@@ -1,4 +1,4 @@
-import type { LocalizedString, techPillsData } from "./common";
+import type { LocalizedString, TechPillsData } from "./common";
 
 export interface experience{
   title: LocalizedString;
@@ -11,5 +11,5 @@ export interface ExperienceItem {
   company: string;
   period: LocalizedString;
   description: LocalizedString[];
-  techPills: techPillsData[];
+  techPills: TechPillsData[];
 }

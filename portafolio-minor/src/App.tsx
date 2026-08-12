@@ -12,7 +12,7 @@ import { MainNavbar } from "./components/navbar";
 import Home from "./components/home";
 import { AboutMe } from "./components/aboutMe";
 import { Experience } from "./components/experience";
-import { GlowMouseFolower } from "./components/common/GlowMouseFollower";
+import { GlowMouseFollower } from "./components/common/GlowMouseFollower";
 import { Projects } from "./components/projects";
 import { Skills } from "./components/skills";
 import { Contact } from "./components/contact";
@@ -20,30 +20,22 @@ import { Contact } from "./components/contact";
 function App() {
   const [showScroll, setShowScroll] = useState(false);
 
-  // Detectar el scroll para mostrar u ocultar el botón
   useEffect(() => {
-    const checkScrollTop = () => {
-      // Muestra el botón si el usuario baja más de 400px
-      if (!showScroll && window.scrollY > 400) {
-        setShowScroll(true);
-      } else if (showScroll && window.scrollY <= 400) {
-        setShowScroll(false);
-      }
-    };
+    const checkScrollTop = () => setShowScroll(window.scrollY > 400);
 
-    window.addEventListener("scroll", checkScrollTop);
-    // Limpiar el event listener cuando el componente se desmonte
+    window.addEventListener("scroll", checkScrollTop, { passive: true });
+    checkScrollTop();
+
     return () => window.removeEventListener("scroll", checkScrollTop);
-  }, [showScroll]);
+  }, []);
 
-  // Función para subir suavemente
   const scrollTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   return (
     <>
-      <GlowMouseFolower />
+      <GlowMouseFollower />
       <MainNavbar />
       <div className="app-content">
         <Home />

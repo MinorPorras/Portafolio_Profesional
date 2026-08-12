@@ -1,15 +1,11 @@
 import type { IconProps } from "../../types";
 import { iconPaths } from "./iconPaths";
 
-export const Icon: React.FC<IconProps> = ({
-  name,
-  size = 24,
-  className = "",
-}) => {
+export function Icon({ name, size = 24, className = "" }: IconProps) {
   const iconDefinition = iconPaths[name];
 
   if (!iconDefinition) {
-    console.warn(`Icon ${name} not found un iconPaths map.`);
+    console.warn(`Icon "${name}" not found in iconPaths map.`);
     return null;
   }
 
@@ -20,9 +16,9 @@ export const Icon: React.FC<IconProps> = ({
       width={size}
       height={size}
       viewBox={iconDefinition.viewBox}
-      className={`${className}`}
+      className={className}
     >
-      {iconDefinition.path}
+      {iconDefinition.content}
     </svg>
   );
-};
+}

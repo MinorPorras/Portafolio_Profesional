@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 
-export function GlowMouseFolower() {
+export function GlowMouseFollower() {
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
       document.documentElement.style.setProperty("--mouse-x", `${e.clientX}px`);

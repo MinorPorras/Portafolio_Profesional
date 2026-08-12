@@ -1,6 +1,6 @@
-import type { navbarItem } from "../types/common";
+import type { NavbarItem } from "../types/common";
 
-export const navbarItems: navbarItem[] = [
+export const navbarItems: NavbarItem[] = [
     {
         name: {
             en: "Home",

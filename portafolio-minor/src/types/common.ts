@@ -1,3 +1,5 @@
+import type { ReactNode } from "react";
+
 export type Theme = "light" | "dark";
 
 export type Language = "en" | "es";
@@ -72,7 +74,7 @@ export interface IconProps {
 
 export interface IconDefinition {
   viewBox: string;
-  path: React.ReactNode;
+  content: ReactNode;
 }
 
 export interface SocialMediaLink {
@@ -85,12 +87,12 @@ export interface SocialMediaLink {
 
 export type LocalizedString = Record<Language, string>;
 
-export type navbarItem = {
+export type NavbarItem = {
   name: Record<Language, string>;
   href: string;
 };
 
-export type usedTech =
+export type UsedTech =
   | "ASP.NET"
   | ".NET Core"
   | "EF Core"
@@ -129,8 +131,8 @@ export type usedTech =
   | "MS Office Interop"
   | "Avalonia";
 
-export interface techPillsData {
-  value: usedTech;
+export interface TechPillsData {
+  value: UsedTech;
   iconName: IconName;
   iconClassName: string;
 }

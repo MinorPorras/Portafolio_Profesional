@@ -1,4 +1,4 @@
-import type { LocalizedString, techPillsData } from "./common";
+import type { LocalizedString, TechPillsData } from "./common";
 
 
 export type ProjectStateEs = "completado" | "en-progreso" | "planeado";
@@ -14,7 +14,7 @@ export interface Project {
   title: LocalizedString;
   description: LocalizedString;
   imageLocation?: string;
-  techStack: techPillsData[];
+  techStack: TechPillsData[];
   githubUrl?: string;
   liveDemoUrl?: string;
   featured: boolean;
