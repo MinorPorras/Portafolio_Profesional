@@ -1,5 +1,6 @@
-[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/MinorPorras/Portafolio_Profesional)
 # Portafolio Profesional — Minor Porras
+
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/MinorPorras/Portafolio_Profesional)
 
 Portafolio personal construido con **React 19 + TypeScript + Vite**, sin
 librerías de UI: todo el CSS es propio. Incluye idioma **ES/EN**, tema
@@ -15,7 +16,6 @@ una función serverless en Netlify (Resend).
 ![GitHub license](https://img.shields.io/github/license/MinorPorras/Portafolio_Profesional?style=for-the-badge)
 ![GitHub top language](https://img.shields.io/github/languages/top/MinorPorras/Portafolio_Profesional?style=for-the-badge)
 ![GitHub repo size](https://img.shields.io/github/repo-size/MinorPorras/Portafolio_Profesional?style=for-the-badge)
-
 
 ## Stack tecnológico
 
@@ -37,7 +37,6 @@ una función serverless en Netlify (Resend).
 ![Anti-spam](https://img.shields.io/badge/Anti--spam-honeypot%20%2B%20time%20filter-red?style=for-the-badge)
 ![UI libs](https://img.shields.io/badge/UI%20libs-0%20dependencias-brightgreen?style=for-the-badge)
 ![Responsive](https://img.shields.io/badge/Responsive-mobile%20first-blue?style=for-the-badge)
-
 
 ## Características
 
