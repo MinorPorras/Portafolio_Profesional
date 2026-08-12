@@ -418,21 +418,21 @@ export const iconPaths: Record<IconName, IconDefinition> = {
           id="timelapse"
           fill="none"
           stroke="currentColor"
-          stroke-linejoin="round"
-          stroke-width="2"
+          strokeLinejoin="round"
+          strokeWidth="2"
         >
           <path d="M53 30a1 1 0 1 1-1-1 1 1 0 0 1 1 1M26 43a1 1 0 1 1-1-1 1 1 0 0 1 1 1m6-1a1 1 0 1 1-1-1 1 1 0 0 1 1 1m-3 3a1 1 0 1 1-1-1 1 1 0 0 1 1 1m5 2a1 1 0 1 1-1-1 1 1 0 0 1 1 1m-4-8a1 1 0 1 1-1-1 1 1 0 0 1 1 1m4 0a1 1 0 1 1-1-1 1 1 0 0 1 1 1" />
           <path
-            stroke-linecap="round"
+            strokeLinecap="round"
             d="m9.586 25.586 2.828 2.828m0-2.828-2.828 2.828"
           />
-          <circle cx="49" cy="22" r="2" stroke-linecap="round" />
+          <circle cx="49" cy="22" r="2" strokeLinecap="round" />
           <rect
             width="28"
             height="4"
             x="16"
             y="6"
-            stroke-linecap="round"
+            strokeLinecap="round"
             rx="2"
           />
           <rect
@@ -440,13 +440,13 @@ export const iconPaths: Record<IconName, IconDefinition> = {
             height="4"
             x="16"
             y="57"
-            stroke-linecap="round"
+            strokeLinecap="round"
             rx="2"
           />
           <path d="M18 10v12a12 12 0 0 0 8.585 11.5A12 12 0 0 0 18 45v12m24 0V45a12 12 0 0 0-8.585-11.5A12 12 0 0 0 42 22V10" />
-          <path stroke-linecap="round" d="m34 19-8 10" />
-          <circle cx="26.5" cy="20.5" r="1.5" stroke-linecap="round" />
-          <circle cx="33.5" cy="27.5" r="1.5" stroke-linecap="round" />
+          <path strokeLinecap="round" d="m34 19-8 10" />
+          <circle cx="26.5" cy="20.5" r="1.5" strokeLinecap="round" />
+          <circle cx="33.5" cy="27.5" r="1.5" strokeLinecap="round" />
           <path d="M42 15H18m0 36h24" />
         </g>
       </>
@@ -457,7 +457,7 @@ export const iconPaths: Record<IconName, IconDefinition> = {
     path: (
       <>
         <title>settings [#1390]</title>
-        <g id="Page-1" fill-rule="evenodd" stroke="none" stroke-width="1">
+        <g id="Page-1" fillRule="evenodd" stroke="none" strokeWidth="1">
           <g id="Dribbble-Light-Preview" transform="translate(-62 -760)">
             <g id="icons" transform="translate(56 160)">
               <path
@@ -521,8 +521,8 @@ export const iconPaths: Record<IconName, IconDefinition> = {
             gradientTransform="translate(1.34 1.894)scale(.07142)"
             gradientUnits="userSpaceOnUse"
           >
-            <stop id="stop38" stop-color="#41d1ff" />
-            <stop id="stop40" offset="1" stop-color="#bd34fe" />
+            <stop id="stop38" stopColor="#41d1ff" />
+            <stop id="stop40" offset="1" stopColor="#bd34fe" />
           </linearGradient>
           <linearGradient
             id="paint1_linear"
@@ -533,9 +533,9 @@ export const iconPaths: Record<IconName, IconDefinition> = {
             gradientTransform="translate(1.34 1.894)scale(.07142)"
             gradientUnits="userSpaceOnUse"
           >
-            <stop id="stop43" stop-color="#ffea83" />
-            <stop id="stop45" offset=".083" stop-color="#ffdd35" />
-            <stop id="stop47" offset="1" stop-color="#ffa800" />
+            <stop id="stop43" stopColor="#ffea83" />
+            <stop id="stop45" offset=".083" stopColor="#ffdd35" />
+            <stop id="stop47" offset="1" stopColor="#ffa800" />
           </linearGradient>
         </defs>
       </>

@@ -18,7 +18,7 @@ export const heroData: HomeProps = {
       platform: "github",
       url: "https://github.com/MinorPorras",
       iconName: "github",
-      iconColorClass: "icon-orange",
+      iconColorClass: "icon-blwh",
       user: "MinorPorras",
     },
     {

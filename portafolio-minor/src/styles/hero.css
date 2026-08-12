@@ -58,28 +58,9 @@
 }
 
 .social-link:hover {
-  background-color: var(--accent-subtle);
+  background-color: var(--bg-primary);
   transform: scale(105%);
   transition: all 0.5s ease;
-}
-
-.social-icon {
-  fill: var(--icon-color);
-  transition: all 0.5s ease;
-}
-
-.social-link:hover .icon-orange {
-  fill: var(--accent-orange);
-  transition: all 0.5s ease;
-}
-
-.social-link:hover .icon-cyan {
-  fill: var(--accent-blue);
-  transition: all 0.5s ease;
-}
-
-.social-link:hover .icon-primary {
-  fill: var(--accent-primary);
 }
 
 @media (max-width: 850px) {
@@ -94,5 +75,10 @@
 
   .social-link {
     height: 100%;
+  }
+
+  .hero-social-section{
+    display: flex;
+    flex-direction: column;
   }
 }

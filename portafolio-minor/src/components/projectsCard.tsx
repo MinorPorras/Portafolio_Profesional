@@ -13,12 +13,14 @@ export function ProjectsCard({ project }: ProjectsCardProps) {
 
   const stateColorClass = STATE_COLOR_MAP[project.state.en] ?? "";
 
+  const state = project.state[language].charAt(0).toUpperCase() + project.state[language].slice(1);
+
   return (
     <article className="project-card">
       <div className="project-card-header">
         <h3 className="project-card-title">{project.title[language]}</h3>
         <span className={`project-card-state ${stateColorClass}`}>
-          {project.state[language]}
+          {state}
         </span>
       </div>
 

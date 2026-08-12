@@ -24,7 +24,7 @@ export function Home() {
           >
             <Icon
               name={iconName}
-              className={`social-icon ${iconColorClass}`}
+              className={`${iconColorClass}`}
               size={24}
             />
             {user}
@@ -33,7 +33,7 @@ export function Home() {
         <a href="#contact" className="hero-cta-btn social-link">
           <Icon
             name="phone"
-            className={`social-icon icon-primary`}
+            className={`icon-primary`}
             size={24}
           />
           {language === "es" ? "Contáctame" : "Contact Me"}

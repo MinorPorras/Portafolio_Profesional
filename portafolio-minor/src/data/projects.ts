@@ -12,7 +12,7 @@ export const projects: Project[] = [
       es: "Sistema ERP de facturación desarrollado para el comercio Dtrigo Panadería, que permite la gestión completa de puntos de venta, flujos de caja, impresión de facturas, control de inventarios, gestión de clientes/proveedores e impresión de etiquetas con múltiples opciones de personalización.",
     },
     imageLocation:
-      "https://placehold.co/800x450/111827/10b981?text=Common+Billing+System",
+      "./src/assets/projectImages/sfCommonImagepng.avif",
     techStack: [
       {
         value: "VB.NET",
