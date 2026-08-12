@@ -12,7 +12,7 @@ export const projects: Project[] = [
       es: "Sistema ERP de facturación desarrollado para el comercio Dtrigo Panadería, que permite la gestión completa de puntos de venta, flujos de caja, impresión de facturas, control de inventarios, gestión de clientes/proveedores e impresión de etiquetas con múltiples opciones de personalización.",
     },
     imageLocation:
-      "./src/assets/projectImages/sfCommonImagepng.avif",
+      "./src/assets/projectImages/sfCommonImage.avif",
     techStack: [
       {
         value: "VB.NET",
@@ -65,7 +65,7 @@ export const projects: Project[] = [
       es: "Landing page para un condominio enfocada en presentar sus servicios, características e información relevante con un diseño atractivo e intuitivo. Incluye soporte multi-idioma (español e inglés) y formulario de contacto funcional.",
     },
     imageLocation:
-      "https://placehold.co/800x450/111827/10b981?text=Landing+Condominio+Bazu",
+      "./src/assets/projectImages/lpCondoBazuImage.avif",
     techStack: [
       {
         value: "React",
@@ -122,7 +122,7 @@ export const projects: Project[] = [
       en: "Integral web application for managing sales points (POS), inventory control, and e-commerce. Includes a shopping cart module, user/role management, product catalog, and statistical administration dashboard.",
       es: "Aplicación web integral para la gestión de puntos de venta (POS), control de inventario y comercio electrónico. Incluye módulo de carrito de compras, gestión de usuarios/roles, catálogo de productos y dashboard estadístico de administración.",
     },
-    imageLocation: "https://placehold.co/800x450/111827/10b981?text=tecno+core",
+    imageLocation: "./src/assets/projectImages/tecnoCoreImage.avif",
     techStack: [
       {
         value: ".NET Core",
@@ -175,7 +175,7 @@ export const projects: Project[] = [
       es: "Aplicación de escritorio para evaluaciones académicas en formato trivia. Cuenta con gestión de roles (docente/estudiante), soporte de audio (.wav), control de permisos y generación de reportes en Word y Excel integrados con MS Access.",
     },
     imageLocation:
-      "https://placehold.co/800x450/111827/10b981?text=preguntados",
+      "./src/assets/projectImages/preguntadosImage.avif",
     techStack: [
       {
         value: "VB.NET",
@@ -226,7 +226,7 @@ export const projects: Project[] = [
       en: "Modular ERP system focused on centralized inventory management, electronic invoicing, and administrative control. Designed under clean architecture and high availability principles.",
       es: "Sistema ERP modular enfocado en la gestión centralizada de inventarios, facturación electrónica y control administrativo. Diseñado bajo arquitectura limpia y principios de alta disponibilidad.",
     },
-    imageLocation: "https://placehold.co/800x450/111827/10b981?text=Arcon",
+    imageLocation: "https://placehold.co/800x450/111827/10b981?text=In-Progress",
     techStack: [
       {
         value: "C#",
@@ -276,7 +276,7 @@ export const projects: Project[] = [
       en: "Music player and local library manager with an integrated interactive virtual pet. Offers multi-platform support, audio metadata reading, device library synchronization, synchronized lyrics, and a personalized user experience.",
       es: "Reproductor de música y gestor de biblioteca local con mascota virtual interactiva integrada. Ofrece soporte multiplataforma, lectura de metadatos de audio, sincronización de bibliotecas, letras sincronizadas y experiencia personalizada.",
     },
-    imageLocation: "https://placehold.co/800x450/111827/10b981?text=Lime+music",
+    imageLocation: "https://placehold.co/800x450/111827/10b981?text=In-Progress",
     techStack: [
       {
         value: "C#",

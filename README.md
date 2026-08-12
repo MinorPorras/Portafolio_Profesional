@@ -39,3 +39,12 @@ pnpm install
 pnpm dev        # desarrollo
 pnpm build      # producción
 ```
+
+El formulario requiere la variable de entorno RESEND_API_KEY configurada en Netlify o como agregarla localmente para desarrollo en el .env.
+
+Adicionalmente para testeos del funcionamiento de las serverless functions se debe de hacer uso del netlify-cli por medio del uso del comando:
+
+``` bash
+pnpm install netlify-cli -g
+netlify dev
+```
