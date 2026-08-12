@@ -1,3 +1,4 @@
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/MinorPorras/Portafolio_Profesional)
 # Portafolio Profesional — Minor Porras
 
 Portafolio personal construido con **React 19 + TypeScript + Vite**, sin
@@ -14,7 +15,6 @@ una función serverless en Netlify (Resend).
 ![GitHub license](https://img.shields.io/github/license/MinorPorras/Portafolio_Profesional?style=for-the-badge)
 ![GitHub top language](https://img.shields.io/github/languages/top/MinorPorras/Portafolio_Profesional?style=for-the-badge)
 ![GitHub repo size](https://img.shields.io/github/repo-size/MinorPorras/Portafolio_Profesional?style=for-the-badge)
-[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/MinorPorras/Portafolio_Profesional)
 
 
 ## Stack tecnológico
