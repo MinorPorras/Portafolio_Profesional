@@ -68,14 +68,18 @@
   transition: all 0.5s ease;
 }
 
-.social-link:hover .social-icon-github {
+.social-link:hover .icon-orange {
   fill: var(--accent-orange);
   transition: all 0.5s ease;
 }
 
-.social-link:hover .social-icon-linkedin {
+.social-link:hover .icon-cyan {
   fill: var(--accent-blue);
   transition: all 0.5s ease;
+}
+
+.social-link:hover .icon-primary {
+  fill: var(--accent-primary);
 }
 
 @media (max-width: 850px) {

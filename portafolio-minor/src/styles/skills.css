@@ -64,28 +64,3 @@
   word-break: break-word;
 }
 
-/* Colores de relleno en hover para los íconos */
-.skill-card:hover .icon-primary {
-  fill: var(--accent-primary);
-}
-.skill-card:hover .icon-blue {
-  fill: var(--accent-blue);
-}
-.skill-card:hover .icon-purple {
-  fill: var(--accent-purple);
-}
-.skill-card:hover .icon-red {
-  fill: var(--accent-red);
-}
-.skill-card:hover .icon-yellow {
-  fill: var(--accent-yellow);
-}
-.skill-card:hover .icon-orange {
-  fill: var(--accent-orange);
-}
-.skill-card:hover .icon-cyan {
-  fill: var(--accent-cyan);
-}
-.skill-card:hover .icon-blwh {
-  fill: var(--border-color);
-}

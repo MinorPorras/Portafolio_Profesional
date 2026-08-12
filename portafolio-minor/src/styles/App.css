@@ -71,29 +71,30 @@ section[id],
 }
 
 /* Estado hover: enciende el ícono según su clase de color */
-.tech-pill:hover .icon-primary {
+.icon-primary {
   fill: var(--accent-primary);
 }
-.tech-pill:hover .icon-blue {
+.icon-blue {
   fill: var(--accent-blue);
 }
-.tech-pill:hover .icon-purple {
+.icon-purple {
   fill: var(--accent-purple);
 }
-.tech-pill:hover .icon-red {
+.icon-red {
   fill: var(--accent-red);
 }
-.tech-pill:hover .icon-yellow {
+.icon-yellow {
   fill: var(--accent-yellow);
 }
-.tech-pill:hover .icon-orange {
+.icon-orange {
   fill: var(--accent-orange);
 }
-.tech-pill:hover .icon-cyan {
+.icon-cyan {
   fill: var(--accent-cyan);
 }
-.tech-pill:hover .icon-blwh {
+.icon-blwh {
   fill: var(--border-color);
+  filter: invert(100%);
 }
 
 .filter-container {
@@ -115,7 +116,9 @@ section[id],
   background-color: var(--bg-surface);
   border: 1px solid var(--border-color);
   color: var(--text-primary);
-  transition: transform 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  transition:
+    transform 0.2s ease-in-out,
+    border-color 0.2s ease-in-out;
   padding: 0.5rem 1rem;
 }
 

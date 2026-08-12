@@ -20,7 +20,7 @@ export const Icon: React.FC<IconProps> = ({
       width={size}
       height={size}
       viewBox={iconDefinition.viewBox}
-      className={`icon icon-${name} ${className}`}
+      className={`${className}`}
     >
       {iconDefinition.path}
     </svg>

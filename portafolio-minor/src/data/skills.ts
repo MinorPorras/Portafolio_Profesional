@@ -150,19 +150,19 @@ export const SkillsData: skillData[] = [
     name: { es: "SSMS", en: "SSMS" },
     category: "tools",
     iconName: "ssms",
-    iconColorClass: "icon-blue",
+    iconColorClass: "icon-red",
   },
   {
     name: { es: "DBeaver", en: "DBeaver" },
     category: "tools",
     iconName: "dbeaver",
-    iconColorClass: "icon-blue",
+    iconColorClass: "icon-orange",
   },
   {
     name: { es: "NuGet", en: "NuGet" },
     category: "tools",
     iconName: "nuget",
-    iconColorClass: "icon-purple",
+    iconColorClass: "icon-blue",
   },
   {
     name: { es: "npm", en: "npm" },

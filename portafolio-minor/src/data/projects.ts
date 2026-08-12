@@ -35,6 +35,11 @@ export const projects: Project[] = [
         iconClassName: "icon-blue",
       },
       {
+        value: "GUNA2",
+        iconName: "guna",
+        iconClassName: "icon-purple",
+      },
+      {
         value: "Velopack",
         iconName: "velopack",
         iconClassName: "icon-yellow",
