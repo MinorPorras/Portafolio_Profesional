@@ -137,7 +137,7 @@ export const projects: Project[] = [
       {
         value: "SQL Server",
         iconName: "sqlserver",
-        iconClassName: "icon-red",
+        iconClassName: "icon-cyan",
       },
       {
         value: "Bootstrap",

@@ -82,12 +82,14 @@ section[id],
 }
 .icon-red {
   fill: var(--accent-red);
+  color: var(--accent-red);
 }
 .icon-yellow {
   fill: var(--accent-yellow);
 }
 .icon-orange {
   fill: var(--accent-orange);
+  color: var(--accent-orange);
 }
 .icon-cyan {
   fill: var(--accent-cyan);

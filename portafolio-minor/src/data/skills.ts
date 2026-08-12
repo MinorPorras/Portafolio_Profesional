@@ -88,6 +88,18 @@ export const SkillsData: skillData[] = [
     iconName: "javascript",
     iconColorClass: "icon-yellow",
   },
+  {
+    name: { es: "HTML5", en: "HTML5" },
+    category: "frontend",
+    iconName: "html5",
+    iconColorClass: "icon-orange",
+  },
+  {
+    name: { es: "CSS3", en: "CSS3" },
+    category: "frontend",
+    iconName: "css3",
+    iconColorClass: "icon-blue",
+  },
 
   // Bases de datos
   {
@@ -175,6 +187,12 @@ export const SkillsData: skillData[] = [
     category: "tools",
     iconName: "pnpm",
     iconColorClass: "icon-yellow",
+  },
+  {
+    name: { es: "Vite", en: "Vite" },
+    category: "tools",
+    iconName: "vite",
+    iconColorClass: "icon-blue",
   },
   {
     name: { es: "Linux", en: "Linux" },
