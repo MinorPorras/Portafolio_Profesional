@@ -16,8 +16,10 @@ import { GlowMouseFollower } from "./components/common/GlowMouseFollower";
 import { Projects } from "./components/projects";
 import { Skills } from "./components/skills";
 import { Contact } from "./components/contact";
+import { useLanguage } from "./hooks/useLanguage";
 
 function App() {
+  const { language } = useLanguage();
   const [showScroll, setShowScroll] = useState(false);
 
   useEffect(() => {
@@ -32,6 +34,22 @@ function App() {
   const scrollTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
+
+  useEffect(() => {
+    const isEs = language === "es";
+    document.documentElement.lang = language;
+    document.title = isEs
+      ? "Minor Porras | Desarrollador de software .NET y WEB"
+      : "Minor Porras | .NET & web software developer";
+    document
+      .querySelector('meta[name="description"]')
+      ?.setAttribute(
+        "content",
+        isEs
+          ? "Portafolio profesional de Minor Porras: desarrollador de software especializado en el ecosistema .NET, C#, SQL y desarrollo web."
+          : "Minor Porras' professional portfolio: software developer specialized in the .NET ecosystem, C#, SQL and web development.",
+      );
+  }, [language]);
 
   return (
     <>

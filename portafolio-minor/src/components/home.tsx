@@ -22,20 +22,21 @@ export function Home() {
             rel="noopener noreferrer"
             className="social-link glassBackground"
           >
-            <Icon
-              name={iconName}
-              className={`${iconColorClass}`}
-              size={24}
-            />
+            <Icon name={iconName} className={`${iconColorClass}`} size={24} />
             {user}
           </a>
         ))}
-        <a href="#contact" className="hero-cta-btn social-link">
-          <Icon
-            name="phone"
-            className={`icon-primary`}
-            size={24}
-          />
+        <a
+          href="/documents/CurriculumMinorPorras.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="social-link glassBackground"
+        >
+          <Icon name="education" className="icon-blue" size={24} />
+          {language === "es" ? "Ver mi CV" : "View my CV"}
+        </a>
+        <a href="#contact" className="social-link glassBackground">
+          <Icon name="phone" className={`icon-primary`} size={24} />
           {language === "es" ? "Contáctame" : "Contact Me"}
         </a>
       </div>
