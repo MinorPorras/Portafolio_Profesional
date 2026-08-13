@@ -20,7 +20,7 @@ export function Home() {
             href={url}
             target="_blank"
             rel="noopener noreferrer"
-            className="social-link"
+            className="social-link glassBackground"
           >
             <Icon
               name={iconName}

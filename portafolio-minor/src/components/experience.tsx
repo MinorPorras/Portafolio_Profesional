@@ -14,7 +14,7 @@ export function Experience() {
             <div key={id} id={id} className="timeline-item">
               <div className="timeline-dot" />
 
-              <details className="timeline-content">
+              <details className="timeline-content glassBackground">
                 <summary className="timeline-header">
                   <div className="timeline-title-group">
                     <h3>{role[language]}</h3>

@@ -17,7 +17,7 @@ export function AboutMe() {
             className="aboutMe-avatar"
           />
         </div>
-        <div className="aboutMe-bio">
+        <div className="aboutMe-bio glassBackground">
           {aboutData.paragraphs.map((text, index) => (
             <p
               key={index}
@@ -31,7 +31,7 @@ export function AboutMe() {
           {aboutData.quickFacts.map(({ iconName, value }) => (
             <div
               key={iconName}
-              className={`aboutMe-fact-tag aboutMe-fact-tag-${iconName}`}
+              className={`aboutMe-fact-tag glassBackground aboutMe-fact-tag-${iconName}`}
             >
               <Icon
                 name={iconName}

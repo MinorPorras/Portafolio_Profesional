@@ -43,7 +43,7 @@ export function Skills() {
       />
       <div className="skills-grid">
         {filteredItems.map((skill) => (
-          <div key={skill.iconName} className="skill-card">
+          <div key={skill.iconName} className="skill-card glassBackground">
             <Icon
               name={skill.iconName}
               className={`skill-card-icon ${skill.iconColorClass ?? ""}`}

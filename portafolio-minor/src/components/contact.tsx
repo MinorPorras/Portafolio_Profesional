@@ -74,7 +74,7 @@ export function Contact() {
   };
 
   return (
-    <section id="contact" className="contact-section">
+    <section id="contact" className="contact-section glassBackground">
       <div className="contact-header">
         <h2 className="section-title">
           {language === "es" ? "Contacto" : "Contact"}
