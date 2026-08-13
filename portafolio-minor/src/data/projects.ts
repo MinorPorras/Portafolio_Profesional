@@ -1,8 +1,8 @@
 import type { Project } from "../types/project";
-import sfCommonImage from "./src/assets/projectImages/sfCommonImage.avif"
-import lpCondoBazuImage from "./src/assets/projectImages/lpCondoBazuImage.avif"
-import tecnoCoreImage from "./src/assets/projectImages/tecnoCoreImage.avif"
-import preguntadosImage from "./src/assets/projectImages/preguntadosImage.avif"
+import sfCommonImage from "../assets/projectImages/sfCommonImage.avif";
+import lpCondoBazuImage from "../assets/projectImages/lpCondoBazuImage.avif";
+import tecnoCoreImage from "../assets/projectImages/tecnoCoreImage.avif";
+import preguntadosImage from "../assets/projectImages/preguntadosImage.avif";
 
 export const projects: Project[] = [
   {
