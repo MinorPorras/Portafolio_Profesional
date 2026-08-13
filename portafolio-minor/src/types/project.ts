@@ -13,7 +13,7 @@ export interface Project {
   id: string;
   title: LocalizedString;
   description: LocalizedString;
-  imageLocation?: string;
+  imageLocation: string;
   techStack: TechPillsData[];
   githubUrl?: string;
   liveDemoUrl?: string;

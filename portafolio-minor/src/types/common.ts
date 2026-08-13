@@ -164,3 +164,10 @@ export interface ContactRequestBody {
   honeypot?: string;
   startTime?: number;
 }
+
+export interface ImageModalProps{
+  isOpen: boolean;
+  onClose: () => void;
+  imageUrl: string;
+  altText: string;
+}

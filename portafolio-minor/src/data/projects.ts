@@ -3,6 +3,7 @@ import sfCommonImage from "../assets/projectImages/sfCommonImage.avif";
 import lpCondoBazuImage from "../assets/projectImages/lpCondoBazuImage.avif";
 import tecnoCoreImage from "../assets/projectImages/tecnoCoreImage.avif";
 import preguntadosImage from "../assets/projectImages/preguntadosImage.avif";
+import projectImageFallback from "../assets/projectImages/projectImageFallback.svg";
 
 export const projects: Project[] = [
   {
@@ -227,7 +228,7 @@ export const projects: Project[] = [
       en: "Modular ERP system focused on centralized inventory management, electronic invoicing, and administrative control. Designed under clean architecture and high availability principles.",
       es: "Sistema ERP modular enfocado en la gestión centralizada de inventarios, facturación electrónica y control administrativo. Diseñado bajo arquitectura limpia y principios de alta disponibilidad.",
     },
-    imageLocation: "https://placehold.co/800x450/111827/10b981?text=In-Progress",
+    imageLocation: projectImageFallback,
     techStack: [
       {
         value: "C#",
@@ -277,7 +278,7 @@ export const projects: Project[] = [
       en: "Music player and local library manager with an integrated interactive virtual pet. Offers multi-platform support, audio metadata reading, device library synchronization, synchronized lyrics, and a personalized user experience.",
       es: "Reproductor de música y gestor de biblioteca local con mascota virtual interactiva integrada. Ofrece soporte multiplataforma, lectura de metadatos de audio, sincronización de bibliotecas, letras sincronizadas y experiencia personalizada.",
     },
-    imageLocation: "https://placehold.co/800x450/111827/10b981?text=In-Progress",
+    imageLocation: projectImageFallback,
     techStack: [
       {
         value: "C#",

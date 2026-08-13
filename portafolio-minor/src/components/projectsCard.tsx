@@ -1,6 +1,8 @@
+import { useState } from "react";
 import { useLanguage } from "../hooks/useLanguage";
 import type { ProjectsCardProps } from "../types/project";
 import { Icon } from "./common/Icon";
+import { ImageModal } from "./common/imageModal.tsx";
 
 const STATE_COLOR_MAP: Record<string, string> = {
   completed: "project-card-state-completed",
@@ -10,28 +12,40 @@ const STATE_COLOR_MAP: Record<string, string> = {
 
 export function ProjectsCard({ project }: ProjectsCardProps) {
   const { language } = useLanguage();
+  const [ isImageOpen, setIsImageOpen ] = useState(false);
 
   const stateColorClass = STATE_COLOR_MAP[project.state.en] ?? "";
 
-  const state = project.state[language].charAt(0).toUpperCase() + project.state[language].slice(1);
+  const state =
+    project.state[language].charAt(0).toUpperCase() +
+    project.state[language].slice(1);
 
   return (
     <article className="project-card glassBackground">
       <div className="project-card-header">
         <h3 className="project-card-title">{project.title[language]}</h3>
-        <span className={`project-card-state ${stateColorClass}`}>
-          {state}
-        </span>
+        <span className={`project-card-state ${stateColorClass}`}>{state}</span>
       </div>
 
       <div className="project-card-body">
-        <img
-          src={project.imageLocation}
-          alt={`Imagen ${project.title[language]}`}
-          loading="lazy"
-          decoding="async"
-          className="project-card-img"
-        />
+        <button
+          type="button"
+          className="project-card-img-btn"
+          onClick={() => setIsImageOpen(true)}
+          aria-label={
+            language === "es"
+              ? `Ampliar imagen de ${project.title[language]}`
+              : `Enlarge image of ${project.title[language]}`
+          }
+        >
+          <img
+            src={project.imageLocation}
+            alt={`Imagen ${project.title[language]}`}
+            loading="lazy"
+            decoding="async"
+            className="project-card-img"
+          />
+        </button>
         <p className="project-card-text">{project.description[language]}</p>
 
         {project.githubUrl && (
@@ -79,6 +93,13 @@ export function ProjectsCard({ project }: ProjectsCardProps) {
           </span>
         ))}
       </div>
+
+      <ImageModal
+        isOpen={isImageOpen}
+        onClose={() => setIsImageOpen(false)}
+        imageUrl={project.imageLocation}
+        altText={`Imagen ${project.title[language]}`}
+      />
     </article>
   );
 }

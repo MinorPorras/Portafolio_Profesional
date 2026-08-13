@@ -46,8 +46,8 @@ function App() {
       ?.setAttribute(
         "content",
         isEs
-          ? "Portafolio profesional de Minor Porras: desarrollador de software especializado en el ecosistema .NET, C#, SQL y desarrollo web."
-          : "Minor Porras' professional portfolio: software developer specialized in the .NET ecosystem, C#, SQL and web development.",
+          ? "Portafolio de Minor Porras, desarrollador de software especializado en el ecosistema .NET, C#, SQL y web. Proyectos, experiencia y contacto."
+          : "Minor Porras' portfolio, software developer specialized in the .NET ecosystem, C#, SQL and web. Projects, experience and contact.",
       );
   }, [language]);
 
