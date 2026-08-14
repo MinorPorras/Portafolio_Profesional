@@ -11,7 +11,7 @@ export function CategoryFilter<T extends string>({
       role="group"
       aria-label="Filtros de categoría"
     >
-      {options.map((option) => {
+      {options.map((option, index) => {
         const isActive = isCategorySelected(option.id);
         return (
           <button
@@ -20,6 +20,7 @@ export function CategoryFilter<T extends string>({
             aria-pressed={isActive}
             className={`filter-btn ${isActive ? "filter-btn-active" : ""}`}
             onClick={() => onToggleCategory(option.id)}
+            style={{animationDelay: `${index * 80}ms`}}
           >
             {option.label}
           </button>

@@ -46,23 +46,28 @@ function App() {
       ?.setAttribute(
         "content",
         isEs
-          ? "Portafolio profesional de Minor Porras: desarrollador de software especializado en el ecosistema .NET, C#, SQL y desarrollo web."
-          : "Minor Porras' professional portfolio: software developer specialized in the .NET ecosystem, C#, SQL and web development.",
+          ? "Portafolio de Minor Porras, desarrollador de software especializado en el ecosistema .NET, C#, SQL y web. Proyectos, experiencia y contacto."
+          : "Minor Porras' portfolio, software developer specialized in the .NET ecosystem, C#, SQL and web. Projects, experience and contact.",
       );
   }, [language]);
 
   return (
     <>
+     {/* Primer elemento enfocable de la página por motivos de accesibilidad*/}
+      <a href="#main-content" className="skip-link">
+        {language === "es" ? "Saltar al contenido" : "Skip to content"}
+      </a>
+
       <GlowMouseFollower />
       <MainNavbar />
-      <div className="app-content">
+      <main id="main-content" className="app-content">
         <Home />
         <AboutMe />
         <Experience />
         <Projects />
         <Skills />
         <Contact />
-      </div>
+      </main>
 
       {/* Botón de volver arriba */}
       <button

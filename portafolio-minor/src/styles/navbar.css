@@ -50,7 +50,7 @@
 }
 
 .navbar-item:hover {
-  background-color: var(--accent-hover);
+  background-color: var(--bg-surface);
   transition: all 0.5s ease-in-out;
 }
 
@@ -70,6 +70,16 @@
   align-items: center;
   font-weight: bold;
   padding: 0.5rem 1rem;
+}
+
+.navbar-item a[aria-current="location"] {
+  color: var(--accent-primary);
+  transition: all 0.5s ease-in-out;
+}
+
+.navbar-item a[aria-current="location"]::after {
+  transform: scaleX(1);
+  transition: all 0.5s ease-in-out;
 }
 
 /* Esconder el botón hamburguesa en desktop */

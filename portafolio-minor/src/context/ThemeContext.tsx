@@ -5,7 +5,7 @@ import { ThemeContext } from "../hooks/useTheme";
 
 export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
     const [theme, setTheme] = useState<Theme>(() => {
-        const saved = localStorage.getItem("theme") as Theme;
+        const saved = localStorage.getItem("app-theme") as Theme;
         return saved || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
     });
 

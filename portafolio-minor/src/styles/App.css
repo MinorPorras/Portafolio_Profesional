@@ -1,3 +1,20 @@
+.skip-link {
+  position: fixed;
+  top: -100%;
+  left: 1rem;
+  z-index: 10000;
+  padding: 0.6rem 1.2rem;
+  background: var(--accent-primary);
+  color: #0b0f19;
+  font-weight: bold;
+  border-radius: 0 0 8px 8px;
+  transition: top 0.2s ease;
+}
+
+.skip-link:focus-visible {
+  top: 0;
+}
+
 .app-content {
   text-align: center;
   display: flex;
@@ -168,4 +185,139 @@ section[id],
   transform: translateY(-5px);
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
   background-color: var(--accent-hover);
+}
+
+/* --------------------- Animaciones inView ---------------------------*/
+/* Animaciones generales */
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition:
+    opacity 0.6s ease-out,
+    transform 0.6s ease-out;
+}
+
+.reveal-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.section-title {
+  animation: rise 0.6s ease-out backwards;
+}
+
+.filter-btn {
+  animation: rise 0.12s ease-out backwards;
+}
+
+@media (hover: hover) {
+  .navbar-item a {
+    position: relative;
+  }
+  .navbar-item a::after {
+    content: "";
+    position: absolute;
+    left: 15%;
+    right: 15%;
+    bottom: 4px;
+    height: 2px;
+    background: var(--accent-primary);
+    transform: scaleX(0);
+    transition: transform 0.25 ease;
+  }
+  .navbar-item a:hover::after,
+  .navbar-item a:focus-visible::after {
+    transform: scaleX(1);
+  }
+}
+
+/* Hero animations */
+.hero-role {
+  animation: rise 0.6s ease-out 0.12s backwards;
+}
+.hero-tagline {
+  animation: rise 0.6s ease-out 0.24s backwards;
+}
+.social-link {
+  animation: rise 0.6s ease-in-out 0.36s backwards;
+}
+
+/* About Me animations */
+.aboutMe-avatar {
+  animation: rise 0.6s ease-in-out 0.12s backwards;
+}
+.aboutMe-bio {
+  animation: rise 0.6s ease-in-out 0.24s backwards;
+}
+.aboutMe-fact-tag {
+  animation: rise 0.6s ease-in-out 0.36s backwards;
+}
+
+/* Experience animations */
+.timeline-content {
+  animation: rise 0.6s ease-in-out 0.12s backwards;
+}
+.tech-pill-rise {
+  animation: rise 0.6s ease-in-out 0.24s backwards;
+}
+.timeline-content.is-open .timeline-header::after {
+  transform: rotate(180deg);
+}
+
+/* Projects animations */
+.timeline-container {
+  animation: rise 0.6s ease-in-out 0.12s backwards;
+}
+.project-card {
+  animation: rise 0.6s ease-in-out 0.24s backwards;
+}
+.project-card-btn {
+  animation: rise 0.6s ease-in-out 0.36s backwards;
+}
+.tech-pill {
+  animation: rise 0.6s ease-in-out 0.48s backwards;
+}
+
+/* Skills animation */
+.skill-card {
+  animation: rise 0.6s ease-in-out 0.24s backwards;
+}
+
+/* Contact animations */
+.contact-subtitle {
+  animation: rise 0.6s ease-in-out 0.12s backwards;
+}
+.contact-section-icon {
+  animation: rise 0.6s ease-in-out 0.24s backwards;
+}
+.form-group,
+.contact-submit-btn {
+  animation: rise 0.6s ease-in-out 0.36s backwards;
+}
+
+/*Respeto global a usuarios con preferencia de movimiento reducido*/
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
 }

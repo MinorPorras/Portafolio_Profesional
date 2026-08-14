@@ -13,3 +13,8 @@ export interface ExperienceItem {
   description: LocalizedString[];
   techPills: TechPillsData[];
 }
+
+export interface ExperienceItemProps{
+  data: ExperienceItem;
+  index: number;
+}

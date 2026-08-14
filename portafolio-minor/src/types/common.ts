@@ -64,7 +64,7 @@ export type IconName =
   | "oledb"
   | "officeinterop"
   | "avalonia"
-  | "phone";
+  | "mail";
 
 export interface IconProps {
   name: IconName;
@@ -163,4 +163,11 @@ export interface ContactRequestBody {
   message?: string;
   honeypot?: string;
   startTime?: number;
+}
+
+export interface ImageModalProps{
+  isOpen: boolean;
+  onClose: () => void;
+  imageUrl: string;
+  altText: string;
 }
