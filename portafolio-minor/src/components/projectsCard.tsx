@@ -10,9 +10,9 @@ const STATE_COLOR_MAP: Record<string, string> = {
   planned: "project-card-state-planned",
 };
 
-export function ProjectsCard({ project }: ProjectsCardProps) {
+export function ProjectsCard({ project, index }: ProjectsCardProps) {
   const { language } = useLanguage();
-  const [ isImageOpen, setIsImageOpen ] = useState(false);
+  const [isImageOpen, setIsImageOpen] = useState(false);
 
   const stateColorClass = STATE_COLOR_MAP[project.state.en] ?? "";
 
@@ -21,7 +21,10 @@ export function ProjectsCard({ project }: ProjectsCardProps) {
     project.state[language].slice(1);
 
   return (
-    <article className="project-card glassBackground">
+    <article
+      className="project-card glassBackground"
+      style={{ animationDelay: `${(index ?? 0) * 70}ms` }}
+    >
       <div className="project-card-header">
         <h3 className="project-card-title">{project.title[language]}</h3>
         <span className={`project-card-state ${stateColorClass}`}>{state}</span>
@@ -82,8 +85,12 @@ export function ProjectsCard({ project }: ProjectsCardProps) {
       </div>
 
       <div className="project-card-footer">
-        {project.techStack.map((tech) => (
-          <span className="tech-pill" key={tech.value}>
+        {project.techStack.map((tech, index) => (
+          <span
+            className="tech-pill"
+            key={tech.value}
+            style={{ animationDelay: `${(index ?? 0) * 70}ms` }}
+          >
             <Icon
               name={tech.iconName}
               className={tech.iconClassName}

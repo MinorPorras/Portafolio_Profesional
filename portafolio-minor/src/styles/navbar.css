@@ -50,7 +50,7 @@
 }
 
 .navbar-item:hover {
-  background-color: var(--accent-hover);
+  background-color: var(--bg-surface);
   transition: all 0.5s ease-in-out;
 }
 

@@ -64,7 +64,7 @@ export type IconName =
   | "oledb"
   | "officeinterop"
   | "avalonia"
-  | "phone";
+  | "mail";
 
 export interface IconProps {
   name: IconName;

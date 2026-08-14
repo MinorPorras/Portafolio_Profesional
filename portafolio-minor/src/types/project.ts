@@ -33,4 +33,5 @@ export type ProjectCategory =
 
 export interface ProjectsCardProps {
   project: Project;
+  index: number;
 }

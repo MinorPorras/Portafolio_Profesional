@@ -8,9 +8,11 @@ import {
 import { useLanguage } from "../hooks/useLanguage";
 import type { FormData } from "../types";
 import { Icon } from "./common/Icon";
+import { useInView } from "../hooks/useInView";
 
 export function Contact() {
   const { language } = useLanguage();
+  const {ref, inView} = useInView();
 
   const startTimeRef = useRef<number>(0);
 
@@ -74,7 +76,7 @@ export function Contact() {
   };
 
   return (
-    <section id="contact" className="contact-section glassBackground">
+    <section id="contact" className={`contact-section glassBackground reveal ${inView ? "reveal-visible" : ""}`} ref={ref}>
       <div className="contact-header">
         <h2 className="section-title">
           {language === "es" ? "Contacto" : "Contact"}
@@ -84,7 +86,7 @@ export function Contact() {
             ? "¿Tienes algún proyecto, propuesta o consulta? ¡Escríbeme!"
             : "Have a project, proposal, or question? Feel free to reach out!"}
         </p>
-        <Icon name="phone" className="contact-section-icon icon-primary" size={24}/>
+        <Icon name="mail" className="contact-section-icon icon-primary" size={24}/>
       </div>
 
       <form className="contact-form" onSubmit={handleSubmit}>
@@ -138,7 +140,7 @@ export function Contact() {
             className="form-input"
           />
         </div>
-        <div className="form-group full-row-input-group">
+        <div className="form-group full-row-input-group" style={{ animationDelay: `80ms` }}>
           <label htmlFor="subject">
             {language === "es" ? "Asunto:" : "Subject:"}
           </label>
@@ -155,7 +157,7 @@ export function Contact() {
             className="form-input"
           />
         </div>
-        <div className="form-group full-row-input-group">
+        <div className="form-group full-row-input-group" style={{ animationDelay: `160ms` }}>
           <label htmlFor="message">
             {language === "es" ? "Mensaje:" : "Message:"}
           </label>
@@ -179,6 +181,7 @@ export function Contact() {
           type="submit"
           disabled={isSubmitting}
           className="contact-submit-btn full-row-input-group"
+          style={{ animationDelay: `240ms` }}
         >
           {isSubmitting
             ? language === "es"
