@@ -52,7 +52,7 @@ export function Home() {
           className="social-link glassBackground"
           style={{ animationDelay: `${(countRedes + 1) * 80}ms` }}
         >
-          <Icon name="phone" className={`icon-primary`} size={24} />
+          <Icon name="mail" className={`icon-primary`} size={24} />
           {language === "es" ? "Contáctame" : "Contact Me"}
         </a>
       </div>

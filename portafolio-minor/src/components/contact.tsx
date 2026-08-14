@@ -10,15 +10,22 @@ import type { FormData } from "../types";
 import { Icon } from "./common/Icon";
 import { useInView } from "../hooks/useInView";
 
+const CONTACT_EMAIL = "minorp1415@protonmail.com";
+
 export function Contact() {
   const { language } = useLanguage();
-  const {ref, inView} = useInView();
+  const { ref, inView } = useInView();
 
   const startTimeRef = useRef<number>(0);
+  const copyTimeoutRef = useRef<number | undefined>(undefined);
+
+  const [copied, setIsCopied] = useState(false);
 
   useEffect(() => {
     startTimeRef.current = Date.now();
   }, []);
+
+  useEffect(() => () => window.clearTimeout(copyTimeoutRef.current), []);
 
   const [formData, setFormData] = useState<FormData>({
     name: "",
@@ -36,6 +43,26 @@ export function Contact() {
   ) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
+  };
+
+  const copyEmail = async () => {
+    try {
+      await navigator.clipboard.writeText(CONTACT_EMAIL);
+    } catch {
+      //Fallback para contextos donde no se tengan permisos o haya problemascon iframes
+      const textarea = document.createElement("textarea");
+      textarea.value = CONTACT_EMAIL;
+      textarea.style.position = "fixed";
+      textarea.style.opacity = "0";
+      document.body.appendChild(textarea);
+      textarea.select();
+      document.execCommand("copy");
+      document.body.removeChild(textarea);
+    }
+
+    setIsCopied(true);
+    window.clearTimeout(copyTimeoutRef.current);
+    copyTimeoutRef.current = window.setTimeout(() => setIsCopied(false), 2000);
   };
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
@@ -76,7 +103,11 @@ export function Contact() {
   };
 
   return (
-    <section id="contact" className={`contact-section glassBackground reveal ${inView ? "reveal-visible" : ""}`} ref={ref}>
+    <section
+      id="contact"
+      className={`contact-section glassBackground reveal ${inView ? "reveal-visible" : ""}`}
+      ref={ref}
+    >
       <div className="contact-header">
         <h2 className="section-title">
           {language === "es" ? "Contacto" : "Contact"}
@@ -86,7 +117,25 @@ export function Contact() {
             ? "¿Tienes algún proyecto, propuesta o consulta? ¡Escríbeme!"
             : "Have a project, proposal, or question? Feel free to reach out!"}
         </p>
-        <Icon name="mail" className="contact-section-icon icon-primary" size={24}/>
+        <div className="contact-email-row" aria-live="polite">
+          <a href={`mailto:${CONTACT_EMAIL}`} className="contact-email-link">
+            {CONTACT_EMAIL}
+          </a>
+          <button type="button" className="copy-email-btn" onClick={copyEmail}>
+            {copied
+              ? language === "es"
+                ? "✓ ¡Copiado!"
+                : "✓ Copied!"
+              : language === "es"
+                ? "Copiar"
+                : "Copy"}
+          </button>
+        </div>
+        <Icon
+          name="mail"
+          className="contact-section-icon icon-primary"
+          size={24}
+        />
       </div>
 
       <form className="contact-form" onSubmit={handleSubmit}>
@@ -140,7 +189,10 @@ export function Contact() {
             className="form-input"
           />
         </div>
-        <div className="form-group full-row-input-group" style={{ animationDelay: `80ms` }}>
+        <div
+          className="form-group full-row-input-group"
+          style={{ animationDelay: `80ms` }}
+        >
           <label htmlFor="subject">
             {language === "es" ? "Asunto:" : "Subject:"}
           </label>
@@ -157,7 +209,10 @@ export function Contact() {
             className="form-input"
           />
         </div>
-        <div className="form-group full-row-input-group" style={{ animationDelay: `160ms` }}>
+        <div
+          className="form-group full-row-input-group"
+          style={{ animationDelay: `160ms` }}
+        >
           <label htmlFor="message">
             {language === "es" ? "Mensaje:" : "Message:"}
           </label>
