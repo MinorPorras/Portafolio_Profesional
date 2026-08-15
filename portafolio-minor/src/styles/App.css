@@ -187,6 +187,32 @@ section[id],
   background-color: var(--accent-hover);
 }
 
+.error-boundary {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  text-align: center;
+  padding: 2rem;
+}
+
+.error-boundary-btn {
+  padding: 0.6rem 1.4rem;
+  border-radius: 8px;
+  border: none;
+  background: var(--accent-primary);
+  color: #0b0f19;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.error-boundary-btn:hover {
+  transform: scale(1.05);
+}
+
 /* --------------------- Animaciones inView ---------------------------*/
 /* Animaciones generales */
 @keyframes rise {

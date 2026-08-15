@@ -171,3 +171,16 @@ export interface ImageModalProps{
   imageUrl: string;
   altText: string;
 }
+
+export interface ErrorBoundaryProps{
+  children: ReactNode;
+}
+
+export interface ErrorBoundaryState{
+  hasError: boolean;
+}
+
+
+
+
+
