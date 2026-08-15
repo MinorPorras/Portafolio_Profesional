@@ -172,18 +172,16 @@
 }
 
 /* ===== Tema claro: texto más oscuro = más contraste ===== */
-[data-theme="light"] .timeline-company {
-  color: #475569; /* ≈ 7.6:1 sobre blanco ✔ */
+[data-theme="light"] .timeline-body .timeline-techpills-container .tech-pill {
+  color: #334155;
+  border-color: #64748b;
 }
 
-[data-theme="light"] .tech-pill {
-  color: #334155;         /* ≈ 10:1 ✔ */
-  border-color: #64748b;  /* borde también más marcado */
-}
-
-/* Si tu .timeline-company usa el verde de acento, en claro usa este: */
 [data-theme="light"] .timeline-company {
-  color: #047857; /* ≈ 5.5:1 ✔ (verde oscuro legible) */
+  color: #475569; 
+}
+[data-theme="light"] .timeline-company {
+  color: #047857;
 }
 
 
