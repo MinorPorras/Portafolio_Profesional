@@ -60,21 +60,7 @@ export const iconPaths: Record<IconName, IconDefinition> = {
       <>
         <circle cx="32" cy="32" r="32" fillOpacity=".15" />
         <path d="M9.82 9A32 32 0 1 0 55 54.18Z" opacity=".1" />
-        <text
-          x="32"
-          y="34"
-          dominantBaseline="central"
-          fontFamily="Segoe UI, system-ui, -apple-system, sans-serif"
-          opacity="1"
-          textAnchor="middle"
-        >
-          <tspan fontSize="21" fontWeight="700" letterSpacing="-.5">
-            EF
-          </tspan>
-          <tspan dx="2" dy="4" fontSize="11" fontWeight="400">
-            Core
-          </tspan>
-        </text>
+        <path d="M9 25h3v14H9z M9 25h9v3H9z M9 30.5h8v3H9z M9 36h9v3H9z M21 25h3v14h-3z M21 25h8v3h-8z M21 30.5h7v3h-7z M32 32h5.5v1.5H32z M32 32h1.5v7H32z M32 37.5h5.5V39H32z M39 32h5.5v1.5H39z M39 37.5h5.5V39H39z M39 32h1.5v7H39z M43 32h1.5v7H43z M46 32h1.5v7H46z M46 32h4.5v1.5H46z M52.5 32h5.5v1.5h-5.5z M52.5 32h1.5v7h-1.5z M52.5 37.5h5.5V39h-5.5z M52.5 34.75h5.5v1.5h-5.5z" />
       </>
     ),
   },
