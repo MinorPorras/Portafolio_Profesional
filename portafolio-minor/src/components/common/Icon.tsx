@@ -17,6 +17,8 @@ export function Icon({ name, size = 24, className = "" }: IconProps) {
       height={size}
       viewBox={iconDefinition.viewBox}
       className={className}
+      aria-hidden="true" 
+      focusable="false"
     >
       {iconDefinition.content}
     </svg>
