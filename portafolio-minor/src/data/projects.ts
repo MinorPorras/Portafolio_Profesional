@@ -1,8 +1,9 @@
 import type { Project } from "../types/project";
-import sfCommonImage from "../assets/projectImages/sfCommonImage.avif";
-import lpCondoBazuImage from "../assets/projectImages/lpCondoBazuImage.avif";
-import tecnoCoreImage from "../assets/projectImages/tecnoCoreImage.avif";
-import preguntadosImage from "../assets/projectImages/preguntadosImage.avif";
+import sfCommonFull from "../assets/projectImages/sfCommonFull.avif";
+import sfCommonThumbnail from "../assets/projectImages/sfCommonThumbnail.avif"
+import lpCondoBazuFull from "../assets/projectImages/lpCondoBazuFull.avif";
+import tecnoCoreFull from "../assets/projectImages/tecnoCoreFull.avif";
+import preguntadosFull from "../assets/projectImages/preguntadosFull.avif";
 import projectImageFallback from "../assets/projectImages/projectImageFallback.svg";
 
 export const projects: Project[] = [
@@ -16,7 +17,8 @@ export const projects: Project[] = [
       en: "Common Billing System developed for Dtrigo Bakery, allowing complete management of sales points, cash flows, invoice printing and more. As well as inventory control and customer/supplier management, label printing and many customization options.",
       es: "Sistema ERP de facturación desarrollado para el comercio Dtrigo Panadería, que permite la gestión completa de puntos de venta, flujos de caja, impresión de facturas, control de inventarios, gestión de clientes/proveedores e impresión de etiquetas con múltiples opciones de personalización.",
     },
-    imageLocation: sfCommonImage,
+    imageLocation: sfCommonThumbnail,
+    imageFullLocation: sfCommonFull,
     techStack: [
       {
         value: "VB.NET",
@@ -68,7 +70,7 @@ export const projects: Project[] = [
       en: "This is a project for a landing page for a condominium, with the main objective of displaying relevant information about the condominium, its services and characteristics. The landing page is designed to be attractive and easy to navigate, with a focus on the user experience. Additionally, it features translation functions to English and Spanish, as well as a contact form for users to submit queries or information requests.",
       es: "Landing page para un condominio enfocada en presentar sus servicios, características e información relevante con un diseño atractivo e intuitivo. Incluye soporte multi-idioma (español e inglés) y formulario de contacto funcional.",
     },
-    imageLocation: lpCondoBazuImage,
+    imageLocation: lpCondoBazuFull,
     techStack: [
       {
         value: "React",
@@ -125,7 +127,7 @@ export const projects: Project[] = [
       en: "Integral web application for managing sales points (POS), inventory control, and e-commerce. Includes a shopping cart module, user/role management, product catalog, and statistical administration dashboard.",
       es: "Aplicación web integral para la gestión de puntos de venta (POS), control de inventario y comercio electrónico. Incluye módulo de carrito de compras, gestión de usuarios/roles, catálogo de productos y dashboard estadístico de administración.",
     },
-    imageLocation: tecnoCoreImage,
+    imageLocation: tecnoCoreFull,
     techStack: [
       {
         value: ".NET Core",
@@ -177,7 +179,7 @@ export const projects: Project[] = [
       en: "Desktop application for academic evaluations in trivia format. It includes role management (teacher/student), audio support (.wav), permission control, and report generation in Word and Excel integrated with MS Access.",
       es: "Aplicación de escritorio para evaluaciones académicas en formato trivia. Cuenta con gestión de roles (docente/estudiante), soporte de audio (.wav), control de permisos y generación de reportes en Word y Excel integrados con MS Access.",
     },
-    imageLocation: preguntadosImage,
+    imageLocation: preguntadosFull,
     techStack: [
       {
         value: "VB.NET",

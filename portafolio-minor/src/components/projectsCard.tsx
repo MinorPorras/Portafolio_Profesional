@@ -3,6 +3,7 @@ import { useLanguage } from "../hooks/useLanguage";
 import type { ProjectsCardProps } from "../types/project";
 import { Icon } from "./common/Icon";
 import { ImageModal } from "./common/imageModal.tsx";
+import { track } from "../lib/analytics.ts";
 
 const STATE_COLOR_MAP: Record<string, string> = {
   completed: "project-card-state-completed",
@@ -20,6 +21,20 @@ export function ProjectsCard({ project, index }: ProjectsCardProps) {
     project.state[language].charAt(0).toUpperCase() +
     project.state[language].slice(1);
 
+    const handleOpenImage= () =>{
+      track("project_image_opened", {project: project.title.en});
+      setIsImageOpen(true);
+    }
+
+    const handleGithubBtnClick = () => {
+      track("github_repo_clicked", {project: project.title.en})
+    }
+
+
+        const handleLiveDemoClick = () => {
+      track("live_demo_clicked", {project: project.title.en})
+    }
+
   return (
     <article
       className="project-card glassBackground"
@@ -34,7 +49,7 @@ export function ProjectsCard({ project, index }: ProjectsCardProps) {
         <button
           type="button"
           className="project-card-img-btn"
-          onClick={() => setIsImageOpen(true)}
+          onClick={() => handleOpenImage()}
           aria-label={
             language === "es"
               ? `Ampliar imagen de ${project.title[language]}`
@@ -47,6 +62,8 @@ export function ProjectsCard({ project, index }: ProjectsCardProps) {
             loading="lazy"
             decoding="async"
             className="project-card-img"
+            width={600}
+            height={200}
           />
         </button>
         <p className="project-card-text">{project.description[language]}</p>
@@ -57,6 +74,7 @@ export function ProjectsCard({ project, index }: ProjectsCardProps) {
             target="_blank"
             rel="noopener noreferrer"
             className="project-card-btn project-card-btn-github"
+            onClick={() => handleGithubBtnClick()}
           >
             <Icon
               name="github"
@@ -73,6 +91,7 @@ export function ProjectsCard({ project, index }: ProjectsCardProps) {
             target="_blank"
             rel="noopener noreferrer"
             className="project-card-btn project-card-btn-demo"
+            onClick={() => handleLiveDemoClick()}
           >
             <Icon
               name="demo"
@@ -104,7 +123,7 @@ export function ProjectsCard({ project, index }: ProjectsCardProps) {
       <ImageModal
         isOpen={isImageOpen}
         onClose={() => setIsImageOpen(false)}
-        imageUrl={project.imageLocation}
+        imageUrl={project.imageFullLocation ?? project.imageLocation}
         altText={`Imagen ${project.title[language]}`}
       />
     </article>

@@ -14,6 +14,7 @@ export interface Project {
   title: LocalizedString;
   description: LocalizedString;
   imageLocation: string;
+  imageFullLocation?: string;
   techStack: TechPillsData[];
   githubUrl?: string;
   liveDemoUrl?: string;
