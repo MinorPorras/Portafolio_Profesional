@@ -9,6 +9,7 @@ import { useLanguage } from "../hooks/useLanguage";
 import type { FormData } from "../types";
 import { Icon } from "./common/Icon";
 import { useInView } from "../hooks/useInView";
+import { track } from "../lib/analytics"
 
 const CONTACT_EMAIL = "minorp1415@protonmail.com";
 
@@ -47,6 +48,7 @@ export function Contact() {
 
   const copyEmail = async () => {
     try {
+      track("email_copied");
       await navigator.clipboard.writeText(CONTACT_EMAIL);
     } catch {
       //Fallback para contextos donde no se tengan permisos o haya problemascon iframes
@@ -80,6 +82,7 @@ export function Contact() {
       });
 
       if (res.ok) {
+        track("contact_form_submitted", {language});
         setSubmitted(true);
         setFormData({
           name: "",

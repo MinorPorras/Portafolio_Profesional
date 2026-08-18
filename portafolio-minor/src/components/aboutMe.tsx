@@ -23,6 +23,8 @@ export function AboutMe() {
             src={profilePlaceholder}
             alt="Minor Porras"
             className="aboutMe-avatar"
+            width={256}
+            height={256}
           />
         </div>
         <div className="aboutMe-bio glassBackground">
@@ -40,7 +42,7 @@ export function AboutMe() {
             <div
               key={iconName}
               className={`aboutMe-fact-tag glassBackground aboutMe-fact-tag-${iconName}`}
-              style={{animationDelay: `${index * 100}ms`}}
+              style={{ animationDelay: `${index * 100}ms` }}
             >
               <Icon
                 name={iconName}

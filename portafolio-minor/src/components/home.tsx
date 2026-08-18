@@ -2,12 +2,17 @@ import { useLanguage } from "../hooks/useLanguage";
 import { heroData } from "../data/home";
 import { Icon } from "./common/Icon";
 import { useInView } from "../hooks/useInView";
+import { track } from "../lib/analytics";
 
 export function Home() {
   const { language } = useLanguage();
   const { ref, inView } = useInView();
 
   const countRedes = heroData.redes.length;
+
+  const handleSeeCV= () => {
+    track("cv_download");
+  }
 
   return (
     <section
@@ -43,6 +48,7 @@ export function Home() {
           rel="noopener noreferrer"
           className="social-link glassBackground"
           style={{ animationDelay: `${countRedes * 80}ms` }}
+          onClick={() => handleSeeCV()}
         >
           <Icon name="education" className="icon-blue" size={24} />
           {language === "es" ? "Ver mi CV" : "View my CV"}

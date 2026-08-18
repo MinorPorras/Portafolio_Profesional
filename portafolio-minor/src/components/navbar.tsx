@@ -3,6 +3,7 @@ import navBarItems from "../data/navbarItems";
 import { useLanguage } from "../hooks/useLanguage";
 import { useTheme } from "../hooks/useTheme";
 import { useScrollSpy } from "../hooks/useScrollSpy";
+import { track } from "../lib/analytics";
 
 const SECTIONS_IDS = navBarItems.map((item) => item.href.slice(1));
 
@@ -30,6 +31,20 @@ export function MainNavbar() {
       : `Modo ${theme === "light" ? "oscuro" : "claro"}`;
 
   const languageBtnText = language === "en" ? "Español" : "English";
+
+const handleThemeToggle = () => {
+  track("theme_toggled", {
+    to: theme === "light" ? "dark" : "light",
+  });
+  toggleTheme();
+};
+
+const handleLanguageToggle = () => {
+  track("language_toggled", {
+    to: language === "es" ? "en" : "es",
+  });
+  toggleLanguage();
+};
 
   return (
     <nav className={`navbar ${theme}`}>
@@ -59,12 +74,12 @@ export function MainNavbar() {
           );
         })}
         <li className="navbar-button-item">
-          <button onClick={toggleTheme} className="toggleButton">
+          <button onClick={handleThemeToggle} className="toggleButton">
             {themeBtnText}
           </button>
         </li>
         <li className="navbar-button-item">
-          <button onClick={toggleLanguage} className="toggleButton">
+          <button onClick={handleLanguageToggle} className="toggleButton">
             {languageBtnText}
           </button>
         </li>

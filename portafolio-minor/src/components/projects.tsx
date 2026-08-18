@@ -6,6 +6,7 @@ import { useLanguage } from "../hooks/useLanguage";
 import type { FilterOptions, ProjectCategory } from "../types";
 import { CategoryFilter } from "./common/CategoryFilter";
 import { ProjectsCard } from "./projectsCard";
+import { track } from "../lib/analytics";
 
 export function Projects() {
   const { language } = useLanguage();
@@ -32,6 +33,7 @@ export function Projects() {
   );
 
   const handleToggleCategory = (category: ProjectCategory | "all") => {
+    track("project_filter_toggled", {category});
     toggleCategory(category);
     setFilterVersion((v) => v + 1);
   };
