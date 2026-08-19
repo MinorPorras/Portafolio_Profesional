@@ -1,8 +1,11 @@
 import { useLanguage } from "../hooks/useLanguage";
-import { aboutData } from "../data/aboutMe";
-import { Icon } from "./common/Icon";
-import profilePlaceholder from "../assets/profile-placeholder.png";
 import { useInView } from "../hooks/useInView";
+import { Icon } from "./common/Icon";
+
+import { aboutData } from "../data/aboutMe";
+import profilePlaceholder from "../assets/profile-placeholder.png";
+import fotoPerfil from "../assets/fotoPerfilMinorPorras.avif"
+
 
 export function AboutMe() {
   const { language } = useLanguage();
@@ -20,7 +23,7 @@ export function AboutMe() {
       <article className="aboutMe-Content">
         <div className="aboutMe-avatar-container">
           <img
-            src={profilePlaceholder}
+            src={fotoPerfil ?? profilePlaceholder}
             alt="Minor Porras"
             className="aboutMe-avatar"
             width={256}

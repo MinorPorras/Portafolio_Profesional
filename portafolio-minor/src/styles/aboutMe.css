@@ -13,17 +13,28 @@
   grid-template-columns: minmax(200px, 1fr) 2fr;
 }
 
-.aboutMe-avatar-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.aboutMe-avatar-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .aboutMe-avatar {
   border: 20px solid var(--accent-primary);
   border-radius: 50%;
   filter: drop-shadow(0px 0px 16px var(--accent-subtle));
-  
+  padding: 2px;
+  transition:
+    transform 0.3s ease,
+    filter 0.3s ease;
+}
+
+.aboutMe-avatar:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0px 0px 25px var(--accent-subtle));
+  transition:
+    transform 0.3s ease,
+    filter 0.3s ease;
 }
 
 .aboutMe-tag-section {
@@ -42,7 +53,7 @@
   padding: 1.5rem 2rem;
   border-radius: 20px;
   font-size: var(--font-size-base);
-  text-align: left; 
+  text-align: left;
   max-width: 650px;
   margin: 0 auto;
   line-height: 1.6;
@@ -77,8 +88,8 @@
   font-weight: 600;
 }
 
-.aboutMe-tag-section{
-    grid: 1/-1;
+.aboutMe-tag-section {
+  grid: 1/-1;
 }
 
 .aboutMe-fact-tag {
