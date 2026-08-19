@@ -199,6 +199,12 @@
 
 
 @media (max-width: 800px){
+    .experience-section{
+        width: 95%;
+        max-width: 95%;
+        padding: 4rem 1rem;
+    }
+
     .timeline-header{
         display: flex;
         flex-direction: column;
