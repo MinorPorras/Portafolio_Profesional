@@ -11,7 +11,7 @@ una función serverless en Netlify (Resend).
 
 ## Estado del proyecto
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/TU-SITE-ID/deploy-status)](https://TU-SITIO.netlify.app)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/ece0efe0-9541-47a1-8b30-ec207922e04b/deploy-status)](minorporras.netlify.app)
 ![GitHub last commit](https://img.shields.io/github/last-commit/MinorPorras/Portafolio_Profesional?style=for-the-badge)
 ![GitHub license](https://img.shields.io/github/license/MinorPorras/Portafolio_Profesional?style=for-the-badge)
 ![GitHub top language](https://img.shields.io/github/languages/top/MinorPorras/Portafolio_Profesional?style=for-the-badge)
