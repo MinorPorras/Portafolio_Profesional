@@ -12,7 +12,6 @@ import { MainNavbar } from "./components/navbar";
 import Home from "./components/home";
 import { AboutMe } from "./components/aboutMe";
 import { Experience } from "./components/experience";
-import { GlowMouseFollower } from "./components/common/GlowMouseFollower";
 import { Projects } from "./components/projects";
 import { Skills } from "./components/skills";
 import { Contact } from "./components/contact";
@@ -53,12 +52,10 @@ function App() {
 
   return (
     <>
-     {/* Primer elemento enfocable de la página por motivos de accesibilidad*/}
+      {/* Primer elemento enfocable de la página por motivos de accesibilidad*/}
       <a href="#main-content" className="skip-link">
         {language === "es" ? "Saltar al contenido" : "Skip to content"}
       </a>
-
-      <GlowMouseFollower />
       <MainNavbar />
       <main id="main-content" className="app-content">
         <Home />
