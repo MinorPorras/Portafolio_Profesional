@@ -1,13 +1,8 @@
 import { Resend } from "resend";
-import type { ContactRequestBody } from "../src/types/common.ts";
-
-// Configurar Edge runtime (más rápido y similar a Netlify Edge Functions)
-export const config = {
-  runtime: "edge",
-};
+import type { ContactRequestBody } from "../src/types/common";
 
 // Inicializamos Resend con la variable de entorno de Vercel
-const resend = new Resend(process.env.RESEND_API_KEY);
+const resend = new Resend(process.env.RESEND_API_KEY ?? "");
 
 // Función para escapar caracteres HTML peligrosos
 const escapeHtml = (value: string): string =>
