@@ -23,7 +23,7 @@ export const heroData: HomeProps = {
     },
     {
       platform: "linkedin",
-      url: "https://www.linkedin.com/in/minor-porras-266372311/",
+      url: "https://www.linkedin.com/in/minor-porras/",
       iconName: "linkedin",
       iconColorClass: "icon-cyan",
       user: "Minor Porras Varela",

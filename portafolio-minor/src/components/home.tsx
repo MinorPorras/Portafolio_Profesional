@@ -43,7 +43,7 @@ export function Home() {
           ),
         )}
         <a
-          href="/documents/CurriculumMinorPorras.pdf"
+          href="/documents/cvMinorPorras.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="social-link glassBackground"
