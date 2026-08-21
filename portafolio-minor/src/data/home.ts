@@ -6,12 +6,12 @@ export const heroData: HomeProps = {
     en: "Hi, I'm Minor Porras",
   },
   role: {
-    es: "Desarrollador de Software",
-    en: "Software Developer",
+    es: "Desarrollador .NET & Full-Stack Junior",
+    en: "Junior .NET & Full-Stack Developer",
   },
   tagline: {
-    es: "Especializado en el ecosistema .NET, desarrollo web y de escritorio. Construyo soluciones escalables enfocadas en rendimiento e interfaces intuitivas.",
-    en: "Specialized in the .NET ecosystem, web, and desktop development. Building scalable solutions with a focus on performance and intuitive user interfaces.",
+    es: "Desarrollo soluciones full-stack de principio a fin (C#, VB.NET, React). Enfocado en la optimización de procesos, código limpio y la reducción de errores operativos para generar impacto real.",
+    en: "I build end-to-end full-stack solutions (C#, VB.NET, React). Focused on process optimization, clean code, and reducing operational errors to deliver real business impact.",
   },
   redes: [
     {
@@ -26,7 +26,7 @@ export const heroData: HomeProps = {
       url: "https://www.linkedin.com/in/minor-porras/",
       iconName: "linkedin",
       iconColorClass: "icon-cyan",
-      user: "Minor Porras Varela",
+      user: "Minor Porras",
     },
   ],
   ctaButtons: {

@@ -64,7 +64,10 @@ export type IconName =
   | "oledb"
   | "officeinterop"
   | "avalonia"
-  | "mail";
+  | "mail"
+  | "netlify"
+  | "vercel"
+  | "blazor";
 
 export interface IconProps {
   name: IconName;
@@ -81,7 +84,7 @@ export interface SocialMediaLink {
   platform: SocialPlatform;
   url: string;
   iconName: IconName;
-  iconColorClass: string
+  iconColorClass: string;
   user: string;
 }
 
@@ -129,7 +132,10 @@ export type UsedTech =
   | "Microsoft Access"
   | "OLEDB / ODBC"
   | "MS Office Interop"
-  | "Avalonia";
+  | "Avalonia"
+  | "Blazor"
+  | "Netlify"
+  | "Vercel";
 
 export interface TechPillsData {
   value: UsedTech;
@@ -165,22 +171,17 @@ export interface ContactRequestBody {
   startTime?: number;
 }
 
-export interface ImageModalProps{
+export interface ImageModalProps {
   isOpen: boolean;
   onClose: () => void;
   imageUrl: string;
   altText: string;
 }
 
-export interface ErrorBoundaryProps{
+export interface ErrorBoundaryProps {
   children: ReactNode;
 }
 
-export interface ErrorBoundaryState{
+export interface ErrorBoundaryState {
   hasError: boolean;
 }
-
-
-
-
-

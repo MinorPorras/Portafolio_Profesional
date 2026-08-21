@@ -1,7 +1,7 @@
 import type { skillData } from "../types/skills.ts";
 
 export const SkillsData: skillData[] = [
-  // Frameworks y Librerías (category: "frontend" o "backend")
+  // Frameworks y Librerías
   {
     name: { es: "ASP.NET", en: "ASP.NET" },
     category: "backend",
@@ -12,6 +12,12 @@ export const SkillsData: skillData[] = [
     name: { es: ".NET Core", en: ".NET Core" },
     category: "backend",
     iconName: "dotnet",
+    iconColorClass: "icon-purple",
+  },
+  {
+    name: { es: "Blazor", en: "Blazor" },
+    category: "frontend",
+    iconName: "blazor",
     iconColorClass: "icon-purple",
   },
   {
@@ -138,7 +144,7 @@ export const SkillsData: skillData[] = [
     name: { es: "GitHub", en: "GitHub" },
     category: "tools",
     iconName: "github",
-    iconColorClass: "icon-orange",
+    iconColorClass: "icon-blwh",
   },
   {
     name: { es: "Visual Studio", en: "Visual Studio" },
@@ -157,6 +163,18 @@ export const SkillsData: skillData[] = [
     category: "tools",
     iconName: "rider",
     iconColorClass: "icon-blue",
+  },
+  {
+    name: { es: "Vercel", en: "Vercel" },
+    category: "tools",
+    iconName: "vercel",
+    iconColorClass: "icon-blwh",
+  },
+  {
+    name: { es: "Netlify", en: "Netlify" },
+    category: "tools",
+    iconName: "netlify",
+    iconColorClass: "icon-cyan",
   },
   {
     name: { es: "SSMS", en: "SSMS" },

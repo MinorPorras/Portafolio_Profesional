@@ -1,6 +1,6 @@
 import type { Project } from "../types/project";
 import sfCommonFull from "../assets/projectImages/sfCommonFull.avif";
-import sfCommonThumbnail from "../assets/projectImages/sfCommonThumbnail.avif"
+import sfCommonThumbnail from "../assets/projectImages/sfCommonThumbnail.avif";
 import lpCondoBazuFull from "../assets/projectImages/lpCondoBazuFull.avif";
 import tecnoCoreFull from "../assets/projectImages/tecnoCoreFull.avif";
 import preguntadosFull from "../assets/projectImages/preguntadosFull.avif";
@@ -14,8 +14,8 @@ export const projects: Project[] = [
       es: "Sistema de Facturación Common",
     },
     description: {
-      en: "Common Billing System developed for Dtrigo Bakery, allowing complete management of sales points, cash flows, invoice printing and more. As well as inventory control and customer/supplier management, label printing and many customization options.",
-      es: "Sistema ERP de facturación desarrollado para el comercio Dtrigo Panadería, que permite la gestión completa de puntos de venta, flujos de caja, impresión de facturas, control de inventarios, gestión de clientes/proveedores e impresión de etiquetas con múltiples opciones de personalización.",
+      en: "Billing and inventory system in production (21 releases) for D'Trigo Bakery. Manages POS, cash registers, accounts receivable, and PDF reports, achieving a 10% increase in efficiency and a 15% reduction in operational errors.",
+      es: "Sistema de facturación e inventario en producción (21 releases) para D'Trigo Panadería. Gestiona puntos de venta, arqueos de caja, cuentas por cobrar y reportes PDF, logrando un aumento del 10% en eficiencia y reducción del 15% en errores operativos.",
     },
     imageLocation: sfCommonThumbnail,
     imageFullLocation: sfCommonFull,
@@ -67,8 +67,8 @@ export const projects: Project[] = [
       es: "Página de destino Condominio Bazú",
     },
     description: {
-      en: "This is a project for a landing page for a condominium, with the main objective of displaying relevant information about the condominium, its services and characteristics. The landing page is designed to be attractive and easy to navigate, with a focus on the user experience. Additionally, it features translation functions to English and Spanish, as well as a contact form for users to submit queries or information requests.",
-      es: "Landing page para un condominio enfocada en presentar sus servicios, características e información relevante con un diseño atractivo e intuitivo. Incluye soporte multi-idioma (español e inglés) y formulario de contacto funcional.",
+      en: "Responsive SPA optimized for SEO and conversion with Bootstrap 5 components customized for the client's brand identity. Features fluid GSAP animations, multi-language support (ES/EN), and a functional contact form with form validation.",
+      es: "SPA responsive optimizada para SEO y conversión con componentes de Bootstrap 5 personalizados según la identidad de marca del cliente. Incluye animaciones fluidas con GSAP, soporte multi-idioma (ES/EN) y formulario de contacto funcional con validación.",
     },
     imageLocation: lpCondoBazuFull,
     techStack: [
@@ -107,6 +107,11 @@ export const projects: Project[] = [
         iconName: "gsap",
         iconClassName: "icon-primary",
       },
+      {
+        value: "Vercel",
+        iconName: "vercel",
+        iconClassName: "icon-blwh",
+      },
     ],
     githubUrl: "https://github.com/MinorPorras/LP_Condominio_Bazu",
     liveDemoUrl: "https://condominiobazu.netlify.app/",
@@ -124,8 +129,8 @@ export const projects: Project[] = [
       es: "Tecno Core",
     },
     description: {
-      en: "Integral web application for managing sales points (POS), inventory control, and e-commerce. Includes a shopping cart module, user/role management, product catalog, and statistical administration dashboard.",
-      es: "Aplicación web integral para la gestión de puntos de venta (POS), control de inventario y comercio electrónico. Incluye módulo de carrito de compras, gestión de usuarios/roles, catálogo de productos y dashboard estadístico de administración.",
+      en: "Clean full-stack architecture with secure authentication (JWT) and role management (Admin/Client). Implementation of repository patterns, shopping cart, and automated database migrations with EF Core and .NET 9.",
+      es: "Arquitectura limpia full-stack con autenticación segura (JWT) y gestión de roles (Admin/Cliente). Implementación de patrones de repositorio, carrito de compras y migraciones de base de datos automatizadas con EF Core y .NET 9.",
     },
     imageLocation: tecnoCoreFull,
     techStack: [
@@ -176,8 +181,8 @@ export const projects: Project[] = [
       es: "PF Preguntados",
     },
     description: {
-      en: "Desktop application for academic evaluations in trivia format. It includes role management (teacher/student), audio support (.wav), permission control, and report generation in Word and Excel integrated with MS Access.",
-      es: "Aplicación de escritorio para evaluaciones académicas en formato trivia. Cuenta con gestión de roles (docente/estudiante), soporte de audio (.wav), control de permisos y generación de reportes en Word y Excel integrados con MS Access.",
+      en: "Educational trivia platform with multimedia support and Role-Based Access Control (RBAC). Automation of detailed academic reports (Word/Excel/PDF) via MS Office Interop for performance analysis.",
+      es: "Plataforma de trivia educativa con soporte multimedia y sistema de control de acceso basado en roles (RBAC). Automatización de reportes académicos detallados (Word/Excel/PDF) mediante MS Office Interop para análisis de rendimiento.",
     },
     imageLocation: preguntadosFull,
     techStack: [
@@ -253,14 +258,9 @@ export const projects: Project[] = [
         iconClassName: "icon-blue",
       },
       {
-        value: "React",
-        iconName: "react",
-        iconClassName: "icon-cyan",
-      },
-      {
-        value: "WinForms",
-        iconName: "winform",
-        iconClassName: "icon-cyan",
+        value: "Blazor",
+        iconName: "blazor",
+        iconClassName: "icon-purple",
       },
     ],
     state: {
