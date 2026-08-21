@@ -1,10 +1,9 @@
 import { Resend } from "resend";
+import type { VercelRequest, VercelResponse } from "@vercel/node";
 import type { ContactRequestBody } from "../src/types/common";
 
-// Inicializamos Resend con la variable de entorno de Vercel
 const resend = new Resend(process.env.RESEND_API_KEY ?? "");
 
-// Función para escapar caracteres HTML peligrosos
 const escapeHtml = (value: string): string =>
   value
     .replace(/&/g, "&amp;")
@@ -13,62 +12,47 @@ const escapeHtml = (value: string): string =>
     .replace(/"/g, "&quot;")
     .replace(/'/g, "&#39;");
 
-export default async function handler(req: Request) {
+export default async function handler(req: VercelRequest, res: VercelResponse) {
   if (req.method !== "POST") {
-    return new Response(JSON.stringify({ error: "Method not allowed" }), {
-      status: 405,
-      headers: { "Content-Type": "application/json" },
-    });
+    return res.status(405).json({ error: "Method not allowed" });
   }
 
+  const { name, email, subject, message, honeypot, startTime } = (req.body ??
+    {}) as ContactRequestBody;
+
+  // FILTRO HONEYPOT
+  if (honeypot) {
+    return res.status(200).json({ success: true, message: "OK" });
+  }
+
+  // FILTRO DE TIEMPO (< 3s = bot)
+  const timeTaken = Date.now() - (startTime || 0);
+  if (timeTaken < 3000) {
+    return res.status(200).json({ success: true, message: "OK" });
+  }
+
+  if (!name || !email || !subject || !message) {
+    return res.status(400).json({ error: "Todos los campos son requeridos" });
+  }
+
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailRegex.test(email)) {
+    return res
+      .status(400)
+      .json({ error: "El correo no tiene un formato válido" });
+  }
+
+  const safeName = escapeHtml(name);
+  const safeEmail = escapeHtml(email);
+  const safeSubject = escapeHtml(subject);
+  const safeMessage = escapeHtml(message);
+
   try {
-    const { name, email, subject, message, honeypot, startTime } =
-      (await req.json()) as ContactRequestBody;
-
-    // FILTRO HONEYPOT: Si el campo trampa tiene texto, es un bot.
-    if (honeypot) {
-      return new Response(JSON.stringify({ success: true, message: "OK" }), {
-        status: 200,
-        headers: { "Content-Type": "application/json" },
-      });
-    }
-
-    // FILTRO DE TIEMPO: Si se envía en menos de 3 segundos (3000ms), es un bot.
-    const timeTaken = Date.now() - (startTime || 0);
-    if (timeTaken < 3000) {
-      return new Response(JSON.stringify({ success: true, message: "OK" }), {
-        status: 200,
-        headers: { "Content-Type": "application/json" },
-      });
-    }
-
-    // Validar campos requeridos
-    if (!name || !email || !subject || !message) {
-      return new Response(
-        JSON.stringify({ error: "Todos los campos son requeridos" }),
-        { status: 400, headers: { "Content-Type": "application/json" } },
-      );
-    }
-
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(email)) {
-      return new Response(
-        JSON.stringify({ error: "El correo no tiene un formato válido" }),
-        { status: 400, headers: { "Content-Type": "application/json" } },
-      );
-    }
-
-    const safeName = escapeHtml(name);
-    const safeEmail = escapeHtml(email);
-    const safeSubject = escapeHtml(subject);
-    const safeMessage = escapeHtml(message);
-
-    // Enviar el correo usando la API de Resend
     const response = await resend.emails.send({
       from: "Portafolio <onboarding@resend.dev>",
       to: ["minorp1415@protonmail.com"],
       replyTo: email,
-      subject: `[Contacto Portafolio] ${subject}`,
+      subject: `[Contacto Portafolio] ${safeSubject}`,
       html: `
         <div style="font-family: sans-serif; padding: 20px; color: #333;">
           <h2 style="color: #4A5568;">Nuevo mensaje desde tu Portafolio</h2>
@@ -83,18 +67,11 @@ export default async function handler(req: Request) {
       `,
     });
 
-    return new Response(JSON.stringify({ success: true, response }), {
-      status: 200,
-      headers: { "Content-Type": "application/json" },
-    });
+    return res.status(200).json({ success: true, response });
   } catch (error) {
     console.error("Error al enviar correo:", error);
-    return new Response(
-      JSON.stringify({ error: "Error interno al enviar el mensaje" }),
-      {
-        status: 500,
-        headers: { "Content-Type": "application/json" },
-      },
-    );
+    return res
+      .status(500)
+      .json({ error: "Error interno al enviar el mensaje" });
   }
 }
