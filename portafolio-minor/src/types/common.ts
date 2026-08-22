@@ -67,7 +67,8 @@ export type IconName =
   | "mail"
   | "netlify"
   | "vercel"
-  | "blazor";
+  | "blazor"
+  | "posthog";
 
 export interface IconProps {
   name: IconName;
@@ -135,7 +136,8 @@ export type UsedTech =
   | "Avalonia"
   | "Blazor"
   | "Netlify"
-  | "Vercel";
+  | "Vercel"
+  | "Posthog";
 
 export interface TechPillsData {
   value: UsedTech;

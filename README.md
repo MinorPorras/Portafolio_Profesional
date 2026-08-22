@@ -11,8 +11,7 @@ una función serverless en Netlify (Resend).
 
 ## Estado del proyecto
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/ece0efe0-9541-47a1-8b30-ec207922e04b/deploy-status)](minorporras.netlify.app)
-![GitHub last commit](https://img.shields.io/github/last-commit/MinorPorras/Portafolio_Profesional?style=for-the-badge)
+[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel&logoColor=white)](https://minorporras.vercel.app)
 ![GitHub license](https://img.shields.io/github/license/MinorPorras/Portafolio_Profesional?style=for-the-badge)
 ![GitHub top language](https://img.shields.io/github/languages/top/MinorPorras/Portafolio_Profesional?style=for-the-badge)
 ![GitHub repo size](https://img.shields.io/github/repo-size/MinorPorras/Portafolio_Profesional?style=for-the-badge)
@@ -53,13 +52,13 @@ React 19 · TypeScript · Vite · pnpm · Netlify Functions · Resend
 ## Estructura
 
 src/
-├── components/   # Secciones de la página
-│   └── common/   # Icon, CategoryFilter, GlowMouseFollower
-├── context/      # ThemeContext / LanguageContext
-├── data/         # Contenido separado de la vista
-├── hooks/        # useLanguage, useTheme, etc.
-├── styles/       # CSS por sección
-└── types/        # Contratos de tipos compartidos
+├── components/ # Secciones de la página
+│ └── common/ # Icon, CategoryFilter, GlowMouseFollower
+├── context/ # ThemeContext / LanguageContext
+├── data/ # Contenido separado de la vista
+├── hooks/ # useLanguage, useTheme, etc.
+├── styles/ # CSS por sección
+└── types/ # Contratos de tipos compartidos
 
 ## Ejecución local
 
@@ -75,7 +74,7 @@ El formulario requiere la variable de entorno RESEND_API_KEY configurada en Netl
 
 Adicionalmente para testeos del funcionamiento de las serverless functions se debe de hacer uso del netlify-cli por medio del uso del comando:
 
-``` bash
+```bash
 pnpm install netlify-cli -g
 netlify dev
 ```

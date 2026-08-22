@@ -218,6 +218,12 @@ export const SkillsData: skillData[] = [
     iconName: "linux",
     iconColorClass: "icon-blwh",
   },
+  {
+    name: {es: "Posthog", en: "Posthog"},
+    category: "tools",
+    iconName: "posthog",
+    iconColorClass: "icon-blue"
+  },
 
   // Soft Skills (category: "soft-skills")
   {

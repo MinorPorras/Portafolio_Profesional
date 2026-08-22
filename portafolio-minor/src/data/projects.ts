@@ -112,6 +112,11 @@ export const projects: Project[] = [
         iconName: "vercel",
         iconClassName: "icon-blwh",
       },
+      {
+        value: "Posthog",
+        iconName: "posthog",
+        iconClassName: "icon-blue",
+      },
     ],
     githubUrl: "https://github.com/MinorPorras/LP_Condominio_Bazu",
     liveDemoUrl: "https://condominiobazu.netlify.app/",
