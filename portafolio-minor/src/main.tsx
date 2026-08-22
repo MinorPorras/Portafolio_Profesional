@@ -5,6 +5,8 @@ import { ThemeProvider } from "./context/ThemeContext.tsx";
 import { LanguageProvider } from "./context/LanguageContext.tsx";
 import { ErrorBoundary } from "./components/common/ErroBoundary.tsx";
 import { initAnalytics } from "./lib/analytics.ts";
+import { injectSpeedInsights } from "@vercel/speed-insights";
+
 
 import "./styles/index.css";
 
@@ -19,6 +21,8 @@ createRoot(document.getElementById("root")!).render(
     </ErrorBoundary>
   </StrictMode>,
 );
+
+injectSpeedInsights();
 
 window.addEventListener(
   "load",
