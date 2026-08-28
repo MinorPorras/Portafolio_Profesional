@@ -32,7 +32,6 @@ una función serverless en Netlify (Resend).
 
 ![i18n](https://img.shields.io/badge/i18n-ES%20%7C%20EN-6F42C1?style=for-the-badge)
 ![Tema](https://img.shields.io/badge/🌗-claro%2Foscuro-333333?style=for-the-badge)
-![Serverless](https://img.shields.io/badge/Serverless-Netlify%20Functions-00C7B7?style=for-the-badge)
 ![Anti-spam](https://img.shields.io/badge/Anti--spam-honeypot%20%2B%20time%20filter-red?style=for-the-badge)
 ![UI libs](https://img.shields.io/badge/UI%20libs-0%20dependencias-brightgreen?style=for-the-badge)
 ![Responsive](https://img.shields.io/badge/Responsive-mobile%20first-blue?style=for-the-badge)
