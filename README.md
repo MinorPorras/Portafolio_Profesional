@@ -7,7 +7,7 @@ librerías de UI: todo el CSS es propio. Incluye idioma **ES/EN**, tema
 **claro/oscuro** y un **formulario de contacto** que envía correos mediante
 una función serverless en Netlify (Resend).
 
-**Sitio en vivo:** <https://minorporras.netlify.app>
+**Sitio en vivo:** <https://minorporras.vercel.app>
 
 ## Estado del proyecto
 
