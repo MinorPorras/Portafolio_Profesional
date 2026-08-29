@@ -68,7 +68,9 @@ export type IconName =
   | "netlify"
   | "vercel"
   | "blazor"
-  | "posthog";
+  | "posthog"
+  | "docker"
+  | "ssh";
 
 export interface IconProps {
   name: IconName;
@@ -137,7 +139,9 @@ export type UsedTech =
   | "Blazor"
   | "Netlify"
   | "Vercel"
-  | "Posthog";
+  | "Posthog"
+  | "SSH"
+  | "Docker";
 
 export interface TechPillsData {
   value: UsedTech;

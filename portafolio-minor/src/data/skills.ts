@@ -146,6 +146,18 @@ export const SkillsData: skillData[] = [
     iconName: "github",
     iconColorClass: "icon-blwh",
   },
+    {
+    name: { es: "Docker", en: "Docker" },
+    category: "tools",
+    iconName: "docker",
+    iconColorClass: "icon-cyan",
+  },
+    {
+    name: { es: "SSH", en: "SSH" },
+    category: "tools",
+    iconName: "ssh",
+    iconColorClass: "icon-blwh",
+  },
   {
     name: { es: "Visual Studio", en: "Visual Studio" },
     category: "tools",
