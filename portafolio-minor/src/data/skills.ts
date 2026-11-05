@@ -15,6 +15,24 @@ export const SkillsData: skillData[] = [
     iconColorClass: "icon-purple",
   },
   {
+    name: { es: "Java", en: "Java" },
+    category: "backend",
+    iconName: "java",
+    iconColorClass: "icon-orange", // El logo de Java es rojo/naranja
+  },
+  {
+    name: { es: "Spring Boot", en: "Spring Boot" },
+    category: "backend",
+    iconName: "spring",
+    iconColorClass: "icon-primary",
+  },
+  {
+    name: { es: "SignalR", en: "SignalR" },
+    category: "backend",
+    iconName: "signalr",
+    iconColorClass: "icon-purple",
+  },
+  {
     name: { es: "Blazor", en: "Blazor" },
     category: "frontend",
     iconName: "blazor",
@@ -146,13 +164,13 @@ export const SkillsData: skillData[] = [
     iconName: "github",
     iconColorClass: "icon-blwh",
   },
-    {
+  {
     name: { es: "Docker", en: "Docker" },
     category: "tools",
     iconName: "docker",
     iconColorClass: "icon-cyan",
   },
-    {
+  {
     name: { es: "SSH", en: "SSH" },
     category: "tools",
     iconName: "ssh",
@@ -231,10 +249,10 @@ export const SkillsData: skillData[] = [
     iconColorClass: "icon-blwh",
   },
   {
-    name: {es: "Posthog", en: "Posthog"},
+    name: { es: "Posthog", en: "Posthog" },
     category: "tools",
     iconName: "posthog",
-    iconColorClass: "icon-blue"
+    iconColorClass: "icon-blue",
   },
 
   // Soft Skills (category: "soft-skills")
@@ -267,6 +285,12 @@ export const SkillsData: skillData[] = [
     category: "soft-skills",
     iconName: "timemanage",
     iconColorClass: "icon-blue",
+  },
+  {
+    name: { es: "Documentación técnica", en: "Technical Documentation" },
+    category: "soft-skills",
+    iconName: "document",
+    iconColorClass: "icon-primary",
   },
 ];
 

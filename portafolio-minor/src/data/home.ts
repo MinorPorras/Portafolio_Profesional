@@ -6,12 +6,12 @@ export const heroData: HomeProps = {
     en: "Hi, I'm Minor Porras",
   },
   role: {
-    es: "Desarrollador .NET & Full-Stack Junior",
-    en: "Junior .NET & Full-Stack Developer",
+    es: "Estudiante de último año & Desarrollador Full-Stack (Java/Spring Boot, .NET, React) | En búsqueda de pasantía",
+    en: "Final-Year CS Student & Full-Stack Developer (Java/Spring Boot, .NET, React) | Seeking International Internship",
   },
   tagline: {
-    es: "Desarrollo soluciones full-stack de principio a fin (C#, VB.NET, React). Enfocado en la optimización de procesos, código limpio y la reducción de errores operativos para generar impacto real.",
-    en: "I build end-to-end full-stack solutions (C#, VB.NET, React). Focused on process optimization, clean code, and reducing operational errors to deliver real business impact.",
+    es: "Diseño APIs escalables y aplicaciones web con Clean Architecture y DDD. Con una sólida base en .NET, me especializo activamente en Java/Spring Boot para entregar soluciones empresariales robustas y código limpio.",
+    en: "I build scalable APIs and web apps using Clean Architecture and DDD. With a strong .NET foundation, I am actively specializing in Java/Spring Boot to deliver robust enterprise solutions and clean code.",
   },
   redes: [
     {

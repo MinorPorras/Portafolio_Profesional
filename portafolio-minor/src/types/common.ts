@@ -70,7 +70,11 @@ export type IconName =
   | "blazor"
   | "posthog"
   | "docker"
-  | "ssh";
+  | "ssh"
+  | "java"
+  | "spring"
+  | "signalr"
+  | "document"
 
 export interface IconProps {
   name: IconName;
@@ -141,7 +145,11 @@ export type UsedTech =
   | "Vercel"
   | "Posthog"
   | "SSH"
-  | "Docker";
+  | "Docker"
+  | "Technical Writing"
+  | "Java"
+  | "Spring Boot"
+  | "SignalR";
 
 export interface TechPillsData {
   value: UsedTech;

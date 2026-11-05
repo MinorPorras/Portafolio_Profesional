@@ -9,7 +9,7 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ chil
         if (saved && (saved === "en" || saved === "es")) {
             return saved;
         }
-        return "es";
+        return "en";
     });
 
     useEffect(() => {

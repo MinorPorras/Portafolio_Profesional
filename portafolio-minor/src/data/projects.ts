@@ -61,6 +61,40 @@ export const projects: Project[] = [
     },
   },
   {
+    id: "bingora-realtime",
+    title: {
+      en: "Bingora",
+      es: "Bingora",
+    },
+    description: {
+      en: "Real-time bingo platform built with Clean Architecture and DDD. Features dynamic QR card generation, optimized PostgreSQL searches (case/accent-insensitive), and match management. Originally architected in .NET 10, currently being refactored to Java/Spring Boot to master enterprise patterns across multiple ecosystems.",
+      es: "Plataforma de bingo en tiempo real construida con Clean Architecture y DDD. Incluye generación dinámica de cartones con QR, búsquedas optimizadas en PostgreSQL (insensibles a mayúsculas/tildes) y gestión de partidas. Originalmente arquitectado en .NET 10, actualmente en proceso de refactorización a Java/Spring Boot para dominar patrones enterprise en múltiples ecosistemas.",
+    },
+    imageLocation: projectImageFallback,
+    techStack: [
+      { value: "Java", iconName: "java", iconClassName: "icon-orange" },
+      { value: "Spring Boot", iconName: "spring", iconClassName: "icon-primary" },
+      { value: ".NET Core", iconName: "dotnet", iconClassName: "icon-purple" },
+      { value: "C#", iconName: "csharp", iconClassName: "icon-purple" },
+      {
+        value: "PostgreSQL",
+        iconName: "postgresql",
+        iconClassName: "icon-blue",
+      },
+      { value: "React", iconName: "react", iconClassName: "icon-cyan" },
+      { value: "SignalR", iconName: "signalr", iconClassName: "icon-purple" },
+      { value: "Docker", iconName: "docker", iconClassName: "icon-blue" },
+    ],
+    githubUrl: "https://github.com/MinorPorras/Bingora",
+    liveDemoUrl: "",
+    featured: true,
+    categories: ["fullstack", "backend", "web"],
+    state: {
+      es: "en-progreso",
+      en: "in-progress",
+    },
+  },
+  {
     id: "Landing-Condo-bazu",
     title: {
       en: "Landing page Condominio Bazú",
