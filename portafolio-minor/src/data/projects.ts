@@ -153,7 +153,7 @@ export const projects: Project[] = [
       },
     ],
     githubUrl: "https://github.com/MinorPorras/LP_Condominio_Bazu",
-    liveDemoUrl: "https://condominiobazu.netlify.app/",
+    liveDemoUrl: "https://condominiobazu.vercel.app/",
     featured: true,
     categories: ["frontend", "web"],
     state: {
